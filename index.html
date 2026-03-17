@@ -1,176 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMIS7A™ | Camisas de Futebol Retrô e Históricas</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curadoria especializada em camisas de futebol retrô, mantos históricos e lançamentos 2026. Qualidade premium para colecionadores. Envio para todo Brasil.">
+    <meta name="keywords" content="camisas retrô futebol, camisas de times clássicos, camisas de futebol importadas, mantos históricos, camis7a">
+    <meta name="author" content="CAMIS7A™">
 
-<title>CAMIS7A™ | Camisas de Futebol Retrô, Históricas e Lançamentos</title>
+    <meta property="og:title" content="CAMIS7A™ | Relíquias do Futebol">
+    <meta property="og:description" content="Mantos históricos e lançamentos exclusivos. Qualidade premium para quem vive o futebol.">
+    <meta property="og:image" content="https://camis7a.github.io/imagens/preview.jpg">
+    <meta property="og:url" content="https://camis7a.github.io">
+    <meta property="og:type" content="website">
 
-<meta name="description" content="CAMIS7A™ é uma curadoria de camisas de futebol retrô, históricas e lançamentos. Catálogo exclusivo para colecionadores e apaixonados por futebol.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
 
-<meta name="keywords" content="camisas retrô futebol, camisas históricas futebol, camisas de futebol retrô, camisas de times clássicos, loja de camisas de futebol">
+    <style>
+        :root {
+            --primary: #22c55e;
+            --bg-dark: #020617;
+            --border: #1e293b;
+        }
 
-<meta name="author" content="CAMIS7A™">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<!-- Open Graph -->
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: radial-gradient(circle at top, #0f172a, #020617);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px 0;
+        }
 
-<meta property="og:title" content="CAMIS7A™ | Camisas de Futebol Retrô">
-<meta property="og:description" content="Descubra camisas de futebol retrô, históricas e lançamentos exclusivos.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://camis7a.github.io">
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 420px;
+        }
 
-<meta property="og:title" content="CAMIS7A™ - Camisas de Futebol Importadas">
-<meta property="og:description" content="As melhores camisas de futebol importadas. Qualidade premium e preço justo.">
-<meta property="og:image" content="https://camis7a.github.io/imagens/preview.jpg">
-<meta property="og:type" content="website">
-    
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        .logo-img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 0 8px var(--primary));
+        }
 
-<link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon.png">
-<link rel="apple-touch-icon" href="imagens/favicon.png">
+        .subtitle {
+            color: #cbd5f5;
+            margin-bottom: 30px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-    
-<style>
+        .links a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background: rgba(2, 6, 23, 0.8);
+            border: 2px solid var(--border);
+            padding: 16px;
+            margin: 12px 0;
+            border-radius: 12px;
+            font-weight: 700;
+            transition: all .3s ease;
+        }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
+        .links a:hover {
+            transform: translateY(-3px);
+            border-color: var(--primary);
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+        }
 
-body{
-
-background: radial-gradient(circle at top,#0f172a,#020617);
-color:white;
-display:flex;
-align-items:center;
-justify-content:center;
-height:100vh;
-
-}
-
-.container{
-
-text-align:center;
-width:90%;
-max-width:420px;
-
-}
-
-.logo{
-
-font-size:36px;
-font-weight:800;
-letter-spacing:3px;
-margin-bottom:10px;
-
-color:#22c55e;
-
-text-shadow:
-0 0 10px #22c55e,
-0 0 20px #22c55e,
-0 0 40px #16a34a;
-
-}
-
-.subtitle{
-
-color:#cbd5f5;
-margin-bottom:35px;
-font-size:14px;
-
-}
-
-.links a{
-
-display:block;
-text-decoration:none;
-color:white;
-background:#020617;
-
-border:2px solid #1e293b;
-
-padding:16px;
-
-margin:12px 0;
-
-border-radius:10px;
-
-font-weight:bold;
-
-transition:all .25s ease;
-
-}
-
-.links a:hover{
-
-transform:scale(1.04);
-
-border-color:#22c55e;
-
-box-shadow:0 0 15px #22c55e;
-
-}
-
-footer{
-
-margin-top:30px;
-font-size:12px;
-color:#94a3b8;
-}
-
-.logo {
-    width: 100px;
-    margin-bottom: 20px;
-}
-    
-font-family: 'Roboto', sans-serif;
-    
-</style>
-
+        footer {
+            margin-top: 40px;
+            font-size: 11px;
+            color: #94a3b8;
+            line-height: 1.6;
+        }
+    </style>
 </head>
-
 <body>
 
 <div class="container">
+    <img src="imagens/logo.png" alt="CAMIS7A Camisas de Futebol" class="logo-img">
+    
+    <div class="subtitle">
+        Retrô • Históricas • Lançamentos
+    </div>
 
-<img src="imagens/logo.png" alt="CAMIS7A Camisas de Futebol" class="logo">
+    <div class="links">
+        <a href="https://www.camis7a.com.br">🛒 Site Oficial (Em Breve)</a> 
+        
+        <a href="https://wa.me/c/5584921536087">⚽ Ver Catálogo no WhatsApp</a>
+        <a href="https://chat.whatsapp.com/GdGseLg2K8GBoTkhsMkSUI" target="_blank">🔥 Grupo VIP de Ofertas</a>
+        <a href="https://www.instagram.com/camis7a.com.br/" target="_blank">📸 Instagram Oficial</a>
+        <a href="https://www.tiktok.com/@camis7a" target="_blank">🎵 TikTok</a>
+        <a href="https://web.facebook.com/camis7a.com.br/" target="_blank">👍 Facebook</a>
+    </div>
 
-<div class="subtitle">
-
-Camisas de Futebol Retrô • Históricas • Lançamentos
-
-</div>
-
-<div class="links">
-
-<a href="https://www.camis7a.com.br" class="link-button">🛒 Comprar no Site Oficial</a>  
-  
-<a href="https://wa.me/c/5584921536087" class="link-button">⚽ Ver Catálogo no WhatsApp</a>
-
-<a href="https://chat.whatsapp.com/GdGseLg2K8GBoTkhsMkSUI?mode=gi_t" target="_blank">🔥 Entrar no Grupo de Ofertas</a>
-
-<a href="https://www.instagram.com/camis7a.com.br/" target="_blank">📸 Instagram</a>
-
-<a href="https://www.tiktok.com/@camis7a?_r=1&_t=ZS-94kfiGB9BbB" target="_blank">🎵 TikTok</a>
-
-<a href="https://web.facebook.com/camis7a.com.br/" target="_blank">👍 Facebook</a>
-
-</div>
-
-<footer>
-
-CAMIS7A™ © 2026  
-Curadoria de camisas de futebol para colecionadores.
-
-</footer>
-
+    <footer>
+        <strong>CAMIS7A™ © 2026</strong><br>
+        Curadoria de camisas para colecionadores apaixonados.<br>
+        Enviamos para todo o Brasil com rastreio.
+    </footer>
 </div>
 
 </body>
-
 </html>
