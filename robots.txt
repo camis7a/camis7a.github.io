@@ -1,0 +1,37 @@
+# ==============================================================
+# robots.txt — CAMIS7A™
+# Arquivo que instrui os robôs de busca (Google, Bing, etc.)
+# sobre quais páginas podem ou não ser indexadas.
+#
+# Localização: raiz do repositório (camis7a.github.io/robots.txt)
+# Validar em: https://search.google.com/search-console
+# ==============================================================
+
+
+# --------------------------------------------------------------
+# Regra para TODOS os robôs de busca
+# User-agent: * significa "qualquer robô"
+# --------------------------------------------------------------
+User-agent: *
+
+# Permite indexar tudo do site
+Allow: /
+
+# --------------------------------------------------------------
+# 🔧 SE NO FUTURO você tiver páginas que NÃO quer indexar
+# (ex: páginas de teste, rascunhos, área administrativa),
+# adicione abaixo usando Disallow. Exemplos:
+#
+# Disallow: /teste/
+# Disallow: /rascunho-produto.html
+# Disallow: /admin/
+#
+# Por enquanto, deixe comentado — todas as páginas são públicas.
+# --------------------------------------------------------------
+
+
+# --------------------------------------------------------------
+# Sitemap — informa ao Google onde está o mapa do site.
+# 🔧 Não altere esta linha.
+# --------------------------------------------------------------
+Sitemap: https://camis7a.github.io/sitemap.xml
