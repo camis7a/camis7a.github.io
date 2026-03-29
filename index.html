@@ -4,72 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- ============================================================
-         🔧 SEO BÁSICO — Altere apenas se mudar o nome ou foco da loja
-         - title      : Aparece na aba do navegador e no Google.
-                        Máx. 60 caracteres.
-         - description: Resumo que aparece abaixo do link no Google.
-                        Máx. 160 caracteres. Inclua palavras-chave.
-         - keywords   : Palavras-chave separadas por vírgula.
-         ============================================================ -->
     <title>CAMIS7A™ | Camisas de Futebol Retrô e Históricas</title>
     <meta name="description" content="Curadoria especializada em camisas de futebol retrô, mantos históricos e lançamentos 2026. Qualidade premium para colecionadores. Envio para todo Brasil.">
     <meta name="keywords" content="camisas retrô futebol, camisas de times clássicos, camisas de futebol importadas, mantos históricos, camis7a">
     <meta name="author" content="CAMIS7A™">
-    <!-- 🔧 FIM SEO BÁSICO -->
 
-
-    <!-- ============================================================
-         🔧 OPEN GRAPH — Controla como o link aparece ao ser
-         compartilhado no WhatsApp, Instagram, Facebook, etc.
-
-         - og:image → Imagem de capa ao compartilhar o link.
-
-         🖼️ IMAGEM NECESSÁRIA: imagens/og-cover.jpg
-            Tamanho exato : 1200 x 630 px
-            Formato       : JPG (melhor compatibilidade)
-            Peso máximo   : 300 KB
-            Conteúdo      : Logo da CAMIS7A + frase de impacto
-                            + foto de uma ou duas camisas ao fundo.
-                            Fundo escuro (#07080a) para manter
-                            o padrão visual da loja.
-         ============================================================ -->
     <meta property="og:title" content="CAMIS7A™ | Relíquias do Futebol">
     <meta property="og:description" content="Mantos históricos e lançamentos exclusivos. Qualidade premium para quem vive o futebol.">
     <meta property="og:image" content="https://camis7a.github.io/imagens/og-cover.jpg">
     <meta property="og:url" content="https://camis7a.github.io">
     <meta property="og:type" content="website">
-    <!-- 🔧 FIM OPEN GRAPH -->
 
+    <!-- ============================================================
+         DADOS ESTRUTURADOS — Pessoa + Organização
+         Ajuda o Google a entender quem está por trás da marca.
+         🔧 Atualize se mudar nome, cargo ou URL.
+         ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CAMIS7A",
+      "url": "https://www.camis7a.com.br",
+      "logo": "https://camis7a.github.io/imagens/logo.png",
+      "sameAs": [
+        "https://www.instagram.com/camis7a.com.br/",
+        "https://www.tiktok.com/@camis7a",
+        "https://web.facebook.com/camis7a.com.br/"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Patrick Santiago",
+        "jobTitle": "Fundador & Curador",
+        "worksFor": { "@type": "Organization", "name": "CAMIS7A" }
+      }
+    }
+    </script>
 
-    <!-- ✅ NÃO ALTERAR — Favicon e fontes (padrão visual da marca)
-         🖼️ IMAGEM NECESSÁRIA: imagens/favicon.png
-            Tamanho: 32 x 32 px ou 64 x 64 px, PNG com fundo transparente
-            É o ícone pequeno que aparece na aba do navegador. -->
+    <!-- ============================================================
+         DADOS ESTRUTURADOS — FAQ
+         🔧 Mantenha sincronizado com o FAQ no HTML abaixo.
+         ============================================================ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Vocês enviam para todo o Brasil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim! Enviamos para todos os estados do Brasil com rastreio incluído. O prazo de entrega varia entre 9 e 15 dias úteis dependendo da sua região."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona a troca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "É simples e sem burocracia. Você tem até 7 dias após o recebimento para solicitar a troca pelo WhatsApp. Cuidamos de tudo para sua satisfação."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais são as formas de pagamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aceitamos Pix, cartão de crédito e débito, tanto pelo site oficial (camis7a.com.br) quanto diretamente pelo WhatsApp, que também é um canal de vendas ativo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo demora a entrega?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entre 9 e 15 dias úteis após a confirmação do pagamento. Você recebe o código de rastreio assim que o pedido é enviado."
+          }
+        }
+      ]
+    }
+    </script>
+
     <link rel="icon" type="image/png" href="imagens/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <!-- ✅ FIM NÃO ALTERAR -->
 
-
-    <!-- ✅ NÃO ALTERAR — CSS completo da página
-         Só mexa aqui se quiser mudar cores globais via :root {}
-         As variáveis de cor estão explicadas nos comentários abaixo. -->
     <style>
 
-        /* ── PALETA GLOBAL ──────────────────────────────────────────
-           Altere estas variáveis para mudar toda a identidade visual.
-           --green : verde principal (preços, destaques, labels)
-           --gold  : dourado (badges, botões de compra)
-           --bg    : cor de fundo da página inteira
-           --surface: cor de fundo dos cards e seções
-        ────────────────────────────────────────────────────────── */
+        /* ── PALETA GLOBAL ── */
         :root {
             --green: #22c55e;
             --green-dim: rgba(34, 197, 94, 0.15);
+            --green-glow: rgba(34, 197, 94, 0.3);
             --gold: #d4a853;
+            --gold-dim: rgba(212, 168, 83, 0.15);
             --bg: #07080a;
             --surface: #111318;
+            --surface2: #161a20;
             --border: rgba(255,255,255,0.06);
             --border-lit: rgba(255,255,255,0.12);
             --text: #e2e8f0;
@@ -86,71 +118,93 @@
             color: var(--text);
             min-height: 100vh;
             overflow-x: hidden;
+            cursor: none;
         }
 
-        /* Textura grain sutil sobre toda a página (efeito premium) */
+        /* ── CURSOR CUSTOMIZADO ── */
+        .cursor-dot {
+            position: fixed;
+            width: 8px; height: 8px;
+            background: var(--green);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 99999;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px var(--green), 0 0 20px var(--green-glow);
+            transition: width .2s, height .2s, background .2s;
+        }
+        .cursor-ring {
+            position: fixed;
+            width: 32px; height: 32px;
+            border: 1.5px solid rgba(34,197,94,0.5);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 99998;
+            transform: translate(-50%, -50%);
+            transition: width .2s, height .2s, border-color .2s;
+        }
+        body.cursor-hover .cursor-dot {
+            width: 12px; height: 12px;
+            background: var(--gold);
+            box-shadow: 0 0 14px var(--gold);
+        }
+        body.cursor-hover .cursor-ring {
+            width: 44px; height: 44px;
+            border-color: rgba(212,168,83,0.5);
+        }
+
+        /* ── GRAIN ── */
         body::before {
             content: '';
-            position: fixed;
-            inset: 0;
+            position: fixed; inset: 0;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
             pointer-events: none;
-            z-index: 9999;
-            opacity: 0.5;
+            z-index: 9999; opacity: 0.5;
         }
 
-        /* Luz ambiente verde suave no topo (efeito atmosférico) */
+        /* ── AMBIENT LIGHT ── */
         .ambient {
             position: fixed;
             top: -30vh; left: 50%;
             transform: translateX(-50%);
             width: 700px; height: 500px;
-            background: radial-gradient(ellipse, rgba(34,197,94,0.06) 0%, transparent 70%);
-            pointer-events: none;
-            z-index: 0;
+            background: radial-gradient(ellipse, rgba(34,197,94,0.07) 0%, transparent 70%);
+            pointer-events: none; z-index: 0;
         }
 
-        /* Container centralizado da página */
+        /* ── LAYOUT ── */
         .wrap {
-            position: relative;
-            z-index: 1;
+            position: relative; z-index: 1;
             max-width: 480px;
             margin: 0 auto;
             padding: 0 20px 60px;
         }
 
-        /* Cabeçalho com logo e nome da marca */
+        /* ── HEADER ── */
         header {
             padding: 48px 0 36px;
             text-align: center;
             animation: fadeUp .8s ease both;
         }
 
-        /* Moldura ao redor do logo */
         .logo-wrap { position: relative; display: inline-block; margin-bottom: 20px; }
 
-        /* Anel decorativo girando ao redor do logo */
         .logo-ring {
-            position: absolute;
-            inset: -12px;
+            position: absolute; inset: -12px;
             border-radius: 50%;
             border: 1px solid rgba(34,197,94,0.2);
             animation: spin 20s linear infinite;
         }
-
-        /* Ponto brilhante que percorre o anel */
         .logo-ring::before {
             content: '';
             position: absolute;
             top: -2px; left: 50%;
             transform: translateX(-50%);
             width: 4px; height: 4px;
-            background: var(--green);
-            border-radius: 50%;
+            background: var(--green); border-radius: 50%;
             box-shadow: 0 0 8px var(--green);
         }
 
-        /* Logo principal */
         .logo-img {
             width: 80px; height: 80px;
             object-fit: contain; display: block;
@@ -158,15 +212,13 @@
             position: relative; z-index: 1;
         }
 
-        /* Nome CAMIS7A em fonte display */
         .brand-name {
             font-family: 'Bebas Neue', sans-serif;
             font-size: 42px; letter-spacing: 4px;
             line-height: 1; color: var(--white); margin-bottom: 6px;
         }
-        .brand-name span { color: var(--green); } /* O "7" fica em verde */
+        .brand-name span { color: var(--green); }
 
-        /* Tagline abaixo do nome */
         .tagline {
             font-family: 'DM Mono', monospace;
             font-size: 10px; letter-spacing: 2.5px;
@@ -174,7 +226,7 @@
             color: var(--muted); line-height: 1.8;
         }
 
-        /* Linha divisória decorativa entre seções */
+        /* ── DIVIDER ── */
         .divider {
             display: flex; align-items: center;
             gap: 12px; margin: 28px 0; opacity: 0.4;
@@ -185,7 +237,7 @@
         }
         .divider-icon { font-size: 12px; color: var(--muted); }
 
-        /* Rótulo que identifica cada seção (ex: "⚽ Produtos em Destaque") */
+        /* ── SECTION LABEL ── */
         .section-label {
             font-family: 'DM Mono', monospace;
             font-size: 9px; letter-spacing: 3px;
@@ -198,7 +250,7 @@
             background: var(--green-dim);
         }
 
-        /* Barra de números (pedidos, avaliação, cobertura) */
+        /* ── STATS ── */
         .stats-bar {
             display: grid; grid-template-columns: 1fr 1fr 1fr;
             gap: 1px; background: var(--border);
@@ -219,13 +271,13 @@
             text-transform: uppercase; color: var(--muted);
         }
 
-        /* Card de produto clicável */
+        /* ── PRODUTO CARD ── */
         .featured-card {
             display: block; text-decoration: none;
             background: var(--surface);
             border: 1px solid var(--border);
             border-radius: 16px; overflow: hidden;
-            margin-bottom: 12px;
+            margin-bottom: 12px; position: relative;
             transition: border-color .3s, transform .3s, box-shadow .3s;
             animation: fadeUp .8s .1s ease both;
         }
@@ -235,7 +287,21 @@
             box-shadow: 0 16px 48px rgba(0,0,0,0.5), 0 0 0 1px rgba(212,168,83,0.1);
         }
 
-        /* Área da imagem do produto dentro do card */
+        /* Shimmer */
+        .featured-card::before {
+            content: '';
+            position: absolute; top: 0; left: -100%;
+            width: 60%; height: 100%;
+            background: linear-gradient(105deg, transparent 20%, rgba(255,255,255,0.04) 50%, transparent 80%);
+            z-index: 5; pointer-events: none;
+            animation: shimmer 3.5s ease infinite;
+        }
+        @keyframes shimmer {
+            0%   { left: -100%; }
+            40%  { left: 150%; }
+            100% { left: 150%; }
+        }
+
         .card-img-area {
             position: relative;
             background: linear-gradient(135deg, #0a0c10 0%, #111620 100%);
@@ -243,17 +309,13 @@
             display: flex; align-items: center; justify-content: center;
             overflow: hidden;
         }
-        /* Gradiente suavizando a base da imagem */
         .card-img-area::after {
             content: ''; position: absolute;
             bottom: 0; left: 0; right: 0; height: 60px;
             background: linear-gradient(transparent, var(--surface));
             z-index: 2; pointer-events: none;
         }
-        /* Emoji exibido se a imagem falhar */
         .card-placeholder { font-size: 64px; opacity: 0.1; }
-
-        /* Imagem da camisa dentro do card */
         .card-img-area img {
             width: 100%; height: 100%;
             object-fit: cover; object-position: center top;
@@ -261,7 +323,7 @@
         }
         .featured-card:hover .card-img-area img { transform: scale(1.04); }
 
-        /* Badge de status (Pronta Entrega, Lançamento, etc.) */
+        /* Badge pulsante */
         .card-badge {
             position: absolute; top: 12px; left: 12px; z-index: 3;
             background: var(--gold); color: #000;
@@ -269,9 +331,14 @@
             font-size: 9px; font-weight: 500;
             letter-spacing: 2px; text-transform: uppercase;
             padding: 4px 10px; border-radius: 4px;
+            animation: badgePulse 2.5s ease infinite;
+            transform-origin: left center;
+        }
+        @keyframes badgePulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(212,168,83,0.4); }
+            50%       { box-shadow: 0 0 0 6px rgba(212,168,83,0); }
         }
 
-        /* Conteúdo textual do card */
         .card-body { padding: 16px 20px 20px; }
         .card-title {
             font-family: 'Bebas Neue', sans-serif;
@@ -280,14 +347,10 @@
         }
         .card-sub { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
         .card-footer { display: flex; align-items: center; justify-content: space-between; }
-
-        /* Preço em destaque verde */
         .card-price {
             font-family: 'Bebas Neue', sans-serif;
             font-size: 28px; letter-spacing: 1px; color: var(--green);
         }
-
-        /* Botão de ação dourado */
         .card-cta {
             background: var(--gold); color: #000;
             font-family: 'DM Mono', monospace;
@@ -298,7 +361,7 @@
         }
         .featured-card:hover .card-cta { opacity: 0.85; }
 
-        /* Card placeholder para produtos ainda não disponíveis */
+        /* Coming soon */
         .coming-card {
             background: var(--surface);
             border: 1px dashed rgba(255,255,255,0.07);
@@ -317,10 +380,8 @@
             color: rgba(255,255,255,0.2);
         }
 
-        /* Lista de links das redes sociais */
-        .links-group { display: flex; flex-direction: column; gap: 8px; animation: fadeUp .8s .3s ease both; }
-
-        /* Item individual de link */
+        /* ── LINKS ── */
+        .links-group { display: flex; flex-direction: column; gap: 8px; }
         .link-item {
             display: flex; align-items: center; gap: 14px;
             text-decoration: none; color: var(--text);
@@ -329,7 +390,6 @@
             transition: all .25s ease;
             position: relative; overflow: hidden;
         }
-        /* Barra lateral verde que aparece ao passar o mouse */
         .link-item::after {
             content: ''; position: absolute;
             left: 0; top: 0; bottom: 0; width: 3px;
@@ -340,8 +400,6 @@
         }
         .link-item:hover { border-color: var(--border-lit); background: #161a1f; transform: translateX(3px); }
         .link-item:hover::after { transform: scaleY(1); }
-
-        /* Ícone quadrado à esquerda do link */
         .link-icon {
             width: 36px; height: 36px;
             background: rgba(255,255,255,0.04);
@@ -356,45 +414,215 @@
         .link-arrow { color: var(--muted); font-size: 14px; transition: color .2s; }
         .link-item:hover .link-arrow { color: var(--green); }
 
-        /* Bloco de depoimentos de clientes */
-        .testimonials { display: flex; flex-direction: column; gap: 8px; animation: fadeUp .8s .4s ease both; }
-
-        /* Card individual de depoimento */
-        .testimonial {
-            background: var(--surface); border: 1px solid var(--border);
-            border-radius: 12px; padding: 16px 18px; position: relative;
+        /* ── CARROSSEL DE DEPOIMENTOS ──────────────────────────────
+           Faixa infinita que desliza automaticamente da direita
+           para a esquerda. Os cards são duplicados para loop contínuo.
+           ✅ NÃO ALTERAR o CSS — edite apenas o conteúdo no HTML.
+        ─────────────────────────────────────────────────────────── */
+        .testimonials-track-wrap {
+            overflow: hidden;
+            margin: 0 -20px; /* sangra até a borda da tela */
+            padding: 4px 0;
         }
-        /* Aspas decorativas no canto superior direito */
+
+        .testimonials-track {
+            display: flex;
+            gap: 12px;
+            width: max-content;
+            animation: marquee 28s linear infinite;
+        }
+
+        /* Pausa ao passar o mouse */
+        .testimonials-track-wrap:hover .testimonials-track {
+            animation-play-state: paused;
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to   { transform: translateX(-50%); }
+        }
+
+        .testimonial {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 18px;
+            position: relative;
+            width: 280px;
+            flex-shrink: 0;
+            transition: border-color .25s;
+        }
+
+        .testimonial:hover { border-color: rgba(34,197,94,0.2); }
+
         .testimonial::before {
-            content: '"'; position: absolute; top: 8px; right: 16px;
-            font-family: 'Bebas Neue', sans-serif; font-size: 52px;
+            content: '"'; position: absolute; top: 8px; right: 14px;
+            font-family: 'Bebas Neue', sans-serif; font-size: 48px;
             color: rgba(255,255,255,0.03); line-height: 1;
         }
-        .t-text { font-size: 13px; line-height: 1.65; color: #94a3b8; margin-bottom: 12px; font-style: italic; }
-        .t-author { display: flex; align-items: center; gap: 10px; }
 
-        /* Avatar circular com inicial do nome */
+        .t-text {
+            font-size: 12px; line-height: 1.65;
+            color: #94a3b8; margin-bottom: 12px; font-style: italic;
+        }
+        .t-author { display: flex; align-items: center; gap: 10px; }
         .t-avatar {
-            width: 28px; height: 28px; border-radius: 50%;
+            width: 26px; height: 26px; border-radius: 50%;
             background: var(--green-dim);
             border: 1px solid rgba(34,197,94,0.2);
             display: flex; align-items: center; justify-content: center;
             font-family: 'Bebas Neue', sans-serif;
-            font-size: 13px; color: var(--green); flex-shrink: 0;
+            font-size: 12px; color: var(--green); flex-shrink: 0;
         }
-        .t-name { font-size: 12px; font-weight: 500; color: var(--text); }
+        .t-name { font-size: 11px; font-weight: 500; color: var(--text); }
         .t-stars { font-size: 10px; color: var(--gold); letter-spacing: 1px; }
 
-        /* Rodapé da página */
-        footer { margin-top: 48px; text-align: center; animation: fadeUp .8s .5s ease both; }
+        /* ── QUEM SOU ───────────────────────────────────────────────
+           Card com foto, nome, cargo e texto biográfico.
+           🔧 Altere: imagens/foto-perfil.jpg, nome, cargo e texto.
+        ─────────────────────────────────────────────────────────── */
+        .about-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 22px 20px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            transition: border-color .25s;
+        }
+
+        .about-card:hover { border-color: rgba(34,197,94,0.15); }
+
+        .about-photo-wrap {
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .about-photo {
+            width: 68px; height: 68px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(34,197,94,0.3);
+            display: block;
+        }
+
+        /* Placeholder se a foto não carregar */
+        .about-photo-fallback {
+            display: none;
+            width: 68px; height: 68px;
+            border-radius: 50%;
+            background: var(--green-dim);
+            border: 2px solid rgba(34,197,94,0.3);
+            align-items: center; justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 26px; color: var(--green);
+        }
+
+        .about-dot {
+            position: absolute;
+            bottom: 2px; right: 2px;
+            width: 12px; height: 12px;
+            background: var(--green);
+            border-radius: 50%;
+            border: 2px solid var(--surface);
+            box-shadow: 0 0 6px var(--green);
+            animation: pulse 2s ease infinite;
+        }
+
+        .about-body { flex: 1; }
+
+        .about-name {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20px; letter-spacing: 1px;
+            color: var(--white); line-height: 1;
+            margin-bottom: 3px;
+        }
+
+        .about-role {
+            font-family: 'DM Mono', monospace;
+            font-size: 9px; letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--green);
+            margin-bottom: 10px;
+        }
+
+        .about-text {
+            font-size: 12px;
+            line-height: 1.7;
+            color: #94a3b8;
+        }
+
+        .about-text strong { color: var(--text); font-weight: 500; }
+
+        /* ── TRUST GRID ── */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .trust-item {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: 12px; padding: 16px 14px;
+            transition: border-color .25s, transform .25s;
+        }
+        .trust-item:hover { border-color: var(--green-dim); transform: translateY(-2px); }
+        .trust-icon { font-size: 22px; margin-bottom: 10px; display: block; }
+        .trust-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 15px; letter-spacing: 0.5px;
+            color: var(--white); margin-bottom: 4px;
+        }
+        .trust-desc { font-size: 11px; color: var(--muted); line-height: 1.6; }
+
+        /* ── FAQ ACCORDION ── */
+        .faq-list { display: flex; flex-direction: column; gap: 8px; }
+        .faq-item {
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: 12px; overflow: hidden;
+            transition: border-color .25s;
+        }
+        .faq-item.open { border-color: rgba(34,197,94,0.2); }
+        .faq-question {
+            width: 100%; background: none; border: none;
+            padding: 16px 18px;
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 12px; cursor: none; text-align: left;
+        }
+        .faq-q-text { font-size: 13px; font-weight: 500; color: var(--white); flex: 1; }
+        .faq-icon {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20px; color: var(--green);
+            flex-shrink: 0; transition: transform .3s ease; line-height: 1;
+        }
+        .faq-item.open .faq-icon { transform: rotate(45deg); }
+        .faq-answer {
+            max-height: 0; overflow: hidden;
+            transition: max-height .35s ease, padding .35s ease;
+            padding: 0 18px;
+        }
+        .faq-item.open .faq-answer { max-height: 200px; padding: 0 18px 16px; }
+        .faq-answer p {
+            font-size: 13px; color: #94a3b8; line-height: 1.7;
+            border-top: 1px solid var(--border); padding-top: 12px;
+        }
+
+        /* ── SCROLL REVEAL ── */
+        .scroll-reveal {
+            opacity: 0; transform: translateY(24px);
+            transition: opacity .6s ease, transform .6s ease;
+        }
+        .scroll-reveal.reveal { opacity: 1; transform: translateY(0); }
+
+        /* ── FOOTER ── */
+        footer { margin-top: 48px; text-align: center; }
         .footer-logo {
             font-family: 'Bebas Neue', sans-serif;
             font-size: 18px; letter-spacing: 3px;
             color: rgba(255,255,255,0.12); margin-bottom: 8px;
         }
         .footer-text { font-size: 11px; color: var(--muted); line-height: 1.8; }
-
-        /* Badge de copyright com ponto pulsante */
         .footer-badge {
             display: inline-flex; align-items: center; gap: 6px;
             background: var(--surface); border: 1px solid var(--border);
@@ -403,15 +631,13 @@
             font-size: 9px; letter-spacing: 1.5px; color: var(--muted);
             margin-top: 14px;
         }
-        /* Ponto verde pulsando — indica que a loja está ativa */
         .footer-dot {
             width: 6px; height: 6px; border-radius: 50%;
-            background: var(--green);
-            box-shadow: 0 0 6px var(--green);
+            background: var(--green); box-shadow: 0 0 6px var(--green);
             animation: pulse 2s ease infinite;
         }
 
-        /* Animações utilizadas na página */
+        /* ── ANIMAÇÕES ── */
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(20px); }
             to   { opacity: 1; transform: translateY(0); }
@@ -426,35 +652,25 @@
         }
 
     </style>
-    <!-- ✅ FIM CSS -->
-
 </head>
 
 <body>
 
-<!-- Efeito de luz ambiente no topo — não altere -->
+<!-- Cursor customizado — não altere -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
 <div class="ambient"></div>
 
 <div class="wrap">
 
-
-    <!-- ============================================================
-         ✅ HEADER — NÃO ALTERAR
-         Logo + nome da marca + tagline.
-
-         🖼️ IMAGEM NECESSÁRIA: imagens/logo.png
-            Tamanho : 200 x 200 px (quadrada)
-            Formato : PNG com fundo transparente
-            Peso max: 100 KB
-            Conteúdo: Símbolo ou logotipo da CAMIS7A
-     ============================================================ -->
+    <!-- ── HEADER ── -->
     <header>
         <div class="logo-wrap">
             <div class="logo-ring"></div>
             <img src="imagens/logo.png"
                  alt="CAMIS7A Camisas de Futebol Retrô"
-                 class="logo-img"
-                 width="80" height="80"
+                 class="logo-img" width="80" height="80"
                  onerror="this.style.display='none'">
         </div>
         <div class="brand-name">CAMIS<span>7</span>A™</div>
@@ -463,179 +679,99 @@
             Qualidade Premium &bull; Envio para Todo Brasil
         </p>
     </header>
-    <!-- ✅ FIM HEADER -->
 
 
     <!-- ============================================================
-         🔧 BARRA DE ESTATÍSTICAS
-         Números que aparecem logo abaixo do header.
-         Atualize conforme a loja crescer.
-
-         - stat-value : número principal
-         - stat-label : legenda abaixo (máx. 2 palavras)
-
-         Exemplos de atualização:
-           500+ pedidos → 1000+ pedidos
-           4.9 avaliação → mantém enquanto for verdade
-     ============================================================ -->
+         🔧 STATS
+         data-target = valor final do contador
+         data-suffix = sufixo após o número (ex: "+")
+         ============================================================ -->
     <div class="stats-bar">
         <div class="stat">
-            <!-- 🔧 Altere o número de pedidos -->
-            <div class="stat-value">500<span>+</span></div>
+            <div class="stat-value">
+                <span class="counter" data-target="500" data-suffix="+">0</span>
+            </div>
             <div class="stat-label">Pedidos</div>
         </div>
         <div class="stat">
-            <!-- 🔧 Altere a nota média da loja -->
-            <div class="stat-value">4<span>.9</span></div>
+            <div class="stat-value">
+                4<span class="counter" data-prefix="." data-target="9" data-suffix="">0</span>
+            </div>
             <div class="stat-label">Avaliação</div>
         </div>
         <div class="stat">
-            <!-- ✅ Este stat é fixo — entregamos para todo o Brasil -->
-            <div class="stat-value">BR<span>+</span></div>
+            <div class="stat-value">BR<span style="color:var(--green)">+</span></div>
             <div class="stat-label">Todo Brasil</div>
         </div>
     </div>
-    <!-- 🔧 FIM STATS -->
 
 
     <!-- ============================================================
          🔧 PRODUTOS EM DESTAQUE
-         Cada produto é um bloco .featured-card.
-
-         FLUXO PARA NOVO PRODUTO:
-         1. Copie o bloco inteiro de um .featured-card existente
-         2. Cole abaixo do último card ou substitua um .coming-card
-         3. Ajuste todos os campos marcados com 🔧
-         4. Suba a imagem no GitHub (ver specs abaixo)
-         5. Atualize também o link no index para a nova página
-
-         🖼️ IMAGEM DO CARD — ESPECIFICAÇÕES:
-            Arquivo  : imagens/[slug-do-produto]/camisa-frente.png
-            Tamanho  : 800 x 800 px (quadrada)
-            Formato  : PNG fundo transparente OU JPG fundo #0a0c10
-            Peso max : 300 KB (comprima em tinypng.com antes de subir)
-            Dica     : Camisa centralizada, parte superior em evidência
-                       (gola + escudo + número visíveis)
-     ============================================================ -->
+         Para novo produto: copie .featured-card e ajuste os dados.
+         Para lançar "em breve": substitua .coming-card por .featured-card.
+         ============================================================ -->
     <div class="section-label">⚽ Produtos em Destaque</div>
 
-
-    <!-- ════════════════════════════════════════════════════════════
-         PRODUTO 1 — Brasil 2026 Retrô 1970 (Amarela)
-         Produto já existente, página pronta.
-
-         🔧 O QUE VOCÊ PODE ALTERAR AQUI:
-         ─ href no <a>   → URL da página do produto
-         ─ img src       → caminho da imagem do card
-         ─ img alt       → descrição da imagem (SEO)
-         ─ .card-badge   → status atual do produto:
-                           ⚡ Pronta Entrega
-                           🔥 Lançamento
-                           ⏳ Últimas Unidades
-                           ❌ Esgotado (adicione border-color: red se quiser)
-         ─ .card-title   → nome completo do produto
-         ─ .card-sub     → info curta: Time • Cor • Detalhe
-         ─ .card-price   → preço (formato: R$ 000,00)
-         ─ .card-cta     → texto do botão de ação
-         ════════════════════════════════════════════════════════════ -->
+    <!-- Produto 1: Brasil 2026 Retrô 1970 -->
     <a href="camisa-selecao-brasileira-2026-retro-1970.html" class="featured-card">
-
         <div class="card-img-area">
-
-            <!-- 🖼️ IMAGEM DESTE PRODUTO:
-                 Arquivo  : imagens/brasil-2026-amarela/camisa-frente.png
-                 Tamanho  : 800 x 800 px
-                 Formato  : PNG fundo transparente ou JPG fundo escuro
-                 Peso max : 300 KB
-                 onerror  : se a imagem não carregar, exibe o emoji 🇧🇷 -->
             <img src="imagens/brasil-2026-amarela/camisa-frente.png"
                  alt="Camisa Seleção Brasileira 2026 Retrô 1970 Amarela"
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <div class="card-placeholder" style="display:none;">🇧🇷</div>
-
-            <!-- 🔧 Badge de status — altere o texto conforme disponibilidade -->
             <div class="card-badge">⚡ Pronta Entrega</div>
-
         </div>
-
         <div class="card-body">
-            <!-- 🔧 Altere nome, descrição curta e preço -->
             <div class="card-title">Brasil 2026 — Edição Retrô 1970</div>
             <div class="card-sub">Seleção Brasileira &bull; Amarela &bull; Escudo bordado</div>
             <div class="card-footer">
+                <!-- 🔧 Preço atualizado -->
                 <div class="card-price">R$ 179,90</div>
                 <div class="card-cta">Garantir →</div>
             </div>
         </div>
-
     </a>
-    <!-- FIM PRODUTO 1 -->
 
-
-    <!-- ════════════════════════════════════════════════════════════
-         PRODUTO 2 — Brasil 2026 Azul (Em breve)
-         Placeholder visual até o produto ficar disponível.
-
-         🔧 QUANDO O PRODUTO ESTIVER PRONTO:
-         1. Apague TODO este bloco .coming-card
-         2. Cole um novo bloco .featured-card (copie o do Produto 1)
-         3. Altere: href, src da imagem, badge, título, sub, preço
-         4. Crie a página do produto usando o TEMPLATE-produto.html
-
-         🖼️ IMAGEM NECESSÁRIA QUANDO LANÇAR:
-            Arquivo  : imagens/brasil-2026-azul/camisa-frente.png
-            Tamanho  : 800 x 800 px
-            Formato  : PNG fundo transparente ou JPG fundo escuro
-            Peso max : 300 KB
-         ════════════════════════════════════════════════════════════ -->
+    <!-- 🔧 Em breve: Camisa Azul — substitua por .featured-card quando lançar -->
     <div class="coming-card">
-        <!-- 🔧 Altere o nome do produto que está por vir -->
         <div class="coming-label">Em breve</div>
         <div class="coming-title">Brasil 2026 — Seleção Azul</div>
     </div>
-    <!-- FIM PRODUTO 2 -->
 
-
-    <!-- ════════════════════════════════════════════════════════════
-         💡 PARA ADICIONAR MAIS PRODUTOS NO FUTURO:
-         Cole novos blocos .featured-card aqui.
-         Não há limite — a página cresce organicamente.
-         ════════════════════════════════════════════════════════════ -->
-
-
-    <!-- Linha decorativa entre seções — não altere -->
     <div class="divider"><span class="divider-icon">✦</span></div>
 
 
     <!-- ============================================================
-         🔧 LINKS DOS CANAIS DA LOJA
-         Cada canal é um bloco .link-item.
+         🔧 LINKS DOS CANAIS
+         Ordem atual: Site → WhatsApp → Instagram → TikTok → Facebook → LinkedIn
+         Para reordenar: mova os blocos .link-item.
+         ============================================================ -->
+    <div class="section-label scroll-reveal">📲 Onde nos encontrar</div>
 
-         🔧 O QUE VOCÊ PODE ALTERAR EM CADA LINK:
-         ─ href         → URL do canal (WhatsApp, Instagram, etc.)
-         ─ .link-icon   → emoji do canal
-         ─ .link-title  → nome do canal
-         ─ .link-desc   → frase curta descrevendo o que o cliente
-                          encontra naquele canal
+    <div class="links-group scroll-reveal">
 
-         Para ADICIONAR canal: copie um .link-item e ajuste os dados.
-         Para REMOVER canal  : apague o bloco .link-item inteiro.
-     ============================================================ -->
-    <div class="section-label">📲 Onde nos encontrar</div>
-
-    <div class="links-group">
-
-        <!-- 🔧 WhatsApp — altere o link se mudar o número ou catálogo -->
-        <a href="https://wa.me/c/5584921536087" class="link-item">
-            <div class="link-icon">⚽</div>
+        <!-- 1. Site Oficial — no ar! -->
+        <a href="https://www.camis7a.com.br" target="_blank" rel="noopener noreferrer" class="link-item">
+            <div class="link-icon">🛒</div>
             <div class="link-info">
-                <div class="link-title">Catálogo no WhatsApp</div>
-                <div class="link-desc">Veja todos os produtos disponíveis</div>
+                <div class="link-title">Site Oficial</div>
+                <div class="link-desc">Acesse nossa loja completa</div>
             </div>
             <div class="link-arrow">›</div>
         </a>
 
-        <!-- 🔧 Instagram — altere o href se mudar o @usuario -->
+        <!-- 2. WhatsApp -->
+        <a href="https://wa.me/c/5584921536087" class="link-item">
+            <div class="link-icon">⚽</div>
+            <div class="link-info">
+                <div class="link-title">Catálogo no WhatsApp</div>
+                <div class="link-desc">Compre e tire dúvidas diretamente</div>
+            </div>
+            <div class="link-arrow">›</div>
+        </a>
+
+        <!-- 3. Instagram -->
         <a href="https://www.instagram.com/camis7a.com.br/" target="_blank" rel="noopener noreferrer" class="link-item">
             <div class="link-icon">📸</div>
             <div class="link-info">
@@ -645,7 +781,7 @@
             <div class="link-arrow">›</div>
         </a>
 
-        <!-- 🔧 TikTok — altere o href se mudar o @usuario -->
+        <!-- 4. TikTok -->
         <a href="https://www.tiktok.com/@camis7a" target="_blank" rel="noopener noreferrer" class="link-item">
             <div class="link-icon">🎵</div>
             <div class="link-info">
@@ -655,7 +791,7 @@
             <div class="link-arrow">›</div>
         </a>
 
-        <!-- 🔧 Facebook — altere o href se mudar a página -->
+        <!-- 5. Facebook -->
         <a href="https://web.facebook.com/camis7a.com.br/" target="_blank" rel="noopener noreferrer" class="link-item">
             <div class="link-icon">👍</div>
             <div class="link-info">
@@ -665,96 +801,267 @@
             <div class="link-arrow">›</div>
         </a>
 
-        <!-- 🔧 Site Oficial — remova este item quando o site estiver no ar
-             e troque a .link-desc por "Acesse nossa loja completa" -->
-        <a href="https://www.camis7a.com.br" class="link-item">
-            <div class="link-icon">🛒</div>
+        <!-- ============================================================
+             🔧 LinkedIn — altere o href para o seu perfil ou página.
+             Formato perfil pessoal : https://www.linkedin.com/in/SEU-USUARIO
+             Formato página empresa : https://www.linkedin.com/company/camis7a
+             ============================================================ -->
+        <a href="https://www.linkedin.com/in/patricksantiago-camisas-retro/" target="_blank" rel="noopener noreferrer" class="link-item">
+            <div class="link-icon">💼</div>
             <div class="link-info">
-                <div class="link-title">Site Oficial</div>
-                <div class="link-desc">Loja completa — em breve</div>
+                <div class="link-title">LinkedIn</div>
+                <div class="link-desc">Autoridade, história e bastidores da marca</div>
             </div>
             <div class="link-arrow">›</div>
         </a>
 
     </div>
-    <!-- 🔧 FIM LINKS -->
 
-
-    <!-- Linha decorativa — não altere -->
-    <div class="divider"><span class="divider-icon">✦</span></div>
+    <div class="divider scroll-reveal"><span class="divider-icon">✦</span></div>
 
 
     <!-- ============================================================
-         🔧 DEPOIMENTOS DE CLIENTES
-         Atualize com avaliações reais recebidas pelo WhatsApp,
-         Instagram ou Google.
+         🔧 DEPOIMENTOS — CARROSSEL AUTOMÁTICO
+         Os cards deslizam da direita para a esquerda continuamente.
+         Passar o mouse pausa o carrossel.
 
-         🔧 O QUE ALTERAR EM CADA DEPOIMENTO:
-         ─ .t-avatar  → PRIMEIRA LETRA MAIÚSCULA do nome do cliente
-         ─ .t-text    → Texto exato do depoimento
-         ─ .t-name    → Nome + Cidade e Estado (ex: João S. — Natal, RN)
-         ─ .t-stars   → ★★★★★ para 5 estrelas (padrão)
-                        ★★★★☆ para 4 estrelas (se aplicável)
+         🔧 PARA ADICIONAR depoimento:
+         Adicione UM bloco .testimonial no grupo "originais" E
+         OUTRO idêntico no grupo "duplicatas" (necessário para o loop).
 
-         Para ADICIONAR depoimento : copie um bloco .testimonial
-         Para REMOVER depoimento   : apague o bloco .testimonial inteiro
-         Mínimo recomendado        : 3 depoimentos
-         Máximo recomendado        : 6 depoimentos (não sobrecarregue)
-     ============================================================ -->
-    <div class="section-label">★ O que dizem nossos clientes</div>
+         🔧 PARA REMOVER depoimento:
+         Remova o bloco dos dois grupos.
+         ============================================================ -->
+    <div class="section-label scroll-reveal">★ O que dizem nossos clientes</div>
 
-    <div class="testimonials">
+    <div class="testimonials-track-wrap scroll-reveal">
+        <div class="testimonials-track" id="testimonialsTrack">
 
-        <!-- Depoimento 1 -->
-        <div class="testimonial">
-            <!-- 🔧 Altere o texto do depoimento -->
-            <p class="t-text">Qualidade incrível. O escudo bordado é perfeito e o tecido é muito mais premium do que eu esperava pelo preço.</p>
-            <div class="t-author">
-                <!-- 🔧 Letra inicial do nome -->
-                <div class="t-avatar">C</div>
-                <div>
-                    <!-- 🔧 Nome e cidade do cliente -->
-                    <div class="t-name">Carlos Miguel — Recife, PE</div>
-                    <div class="t-stars">★★★★★</div>
+            <!-- ── ORIGINAIS ── -->
+            <div class="testimonial">
+                <p class="t-text">Qualidade incrível. O escudo bordado é perfeito e o tecido é muito mais premium do que eu esperava pelo preço.</p>
+                <div class="t-author">
+                    <div class="t-avatar">C</div>
+                    <div>
+                        <div class="t-name">Carlos Miguel — Recife, PE</div>
+                        <div class="t-stars">★★★★★</div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Depoimento 2 -->
-        <div class="testimonial">
-            <p class="t-text">Chegou rápido e embalada direitinho. Comprei a retrô 1970 e já quero a azul. Recomendo sem hesitar.</p>
-            <div class="t-author">
-                <div class="t-avatar">R</div>
-                <div>
-                    <div class="t-name">Rodrigo Silva — Natal, RN</div>
-                    <div class="t-stars">★★★★★</div>
+            <div class="testimonial">
+                <p class="t-text">Chegou rápido e embalada direitinho. Comprei a retrô 1970 e já quero a azul. Recomendo sem hesitar.</p>
+                <div class="t-author">
+                    <div class="t-avatar">R</div>
+                    <div>
+                        <div class="t-name">Rodrigo Silva — Natal, RN</div>
+                        <div class="t-stars">★★★★★</div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Depoimento 3 -->
-        <div class="testimonial">
-            <p class="t-text">Presente perfeito pro meu marido. Ele é colecionador e disse que é uma das melhores que já teve. Voltarei a comprar!</p>
-            <div class="t-author">
-                <div class="t-avatar">A</div>
-                <div>
-                    <div class="t-name">Ana Paula — Fortaleza, CE</div>
-                    <div class="t-stars">★★★★★</div>
+            <div class="testimonial">
+                <p class="t-text">Presente perfeito pro meu marido. Colecionador inveterado — disse que é uma das melhores que já teve. Voltarei a comprar!</p>
+                <div class="t-author">
+                    <div class="t-avatar">A</div>
+                    <div>
+                        <div class="t-name">Ana Paula — Fortaleza, CE</div>
+                        <div class="t-stars">★★★★★</div>
+                    </div>
                 </div>
             </div>
+
+            <div class="testimonial">
+                <p class="t-text">Atendimento impecável pelo WhatsApp. Tirei todas as dúvidas antes de comprar e não me arrependi nada!</p>
+                <div class="t-author">
+                    <div class="t-avatar">M</div>
+                    <div>
+                        <div class="t-name">Marcelo T. — São Paulo, SP</div>
+                        <div class="t-stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── DUPLICATAS (necessário para loop infinito) ── -->
+            <div class="testimonial">
+                <p class="t-text">Qualidade incrível. O escudo bordado é perfeito e o tecido é muito mais premium do que eu esperava pelo preço.</p>
+                <div class="t-author">
+                    <div class="t-avatar">C</div>
+                    <div>
+                        <div class="t-name">Carlos Miguel — Recife, PE</div>
+                        <div class="t-stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="t-text">Chegou rápido e embalada direitinho. Comprei a retrô 1970 e já quero a azul. Recomendo sem hesitar.</p>
+                <div class="t-author">
+                    <div class="t-avatar">R</div>
+                    <div>
+                        <div class="t-name">Rodrigo Silva — Natal, RN</div>
+                        <div class="t-stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="t-text">Presente perfeito pro meu marido. Colecionador inveterado — disse que é uma das melhores que já teve. Voltarei a comprar!</p>
+                <div class="t-author">
+                    <div class="t-avatar">A</div>
+                    <div>
+                        <div class="t-name">Ana Paula — Fortaleza, CE</div>
+                        <div class="t-stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="t-text">Atendimento impecável pelo WhatsApp. Tirei todas as dúvidas antes de comprar e não me arrependi nada!</p>
+                <div class="t-author">
+                    <div class="t-avatar">M</div>
+                    <div>
+                        <div class="t-name">Marcelo T. — São Paulo, SP</div>
+                        <div class="t-stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="divider scroll-reveal"><span class="divider-icon">✦</span></div>
+
+
+    <!-- ============================================================
+         🔧 QUEM SOU
+         Altere: imagens/foto-perfil.jpg, nome, cargo e texto.
+         O ponto verde indica "ativo/online" — mantenha.
+         ============================================================ -->
+    <div class="section-label scroll-reveal">👤 Quem está por trás</div>
+
+    <div class="about-card scroll-reveal">
+
+        <div class="about-photo-wrap">
+            <!-- 🔧 Coloque sua foto em imagens/foto-perfil.jpg -->
+            <img src="imagens/foto-perfil.jpg"
+                 alt="Patrick Santiago — Fundador da CAMIS7A"
+                 class="about-photo"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <!-- Placeholder se foto não carregar -->
+            <div class="about-photo-fallback">P</div>
+            <div class="about-dot"></div>
         </div>
 
-        <!-- 💡 Cole novos blocos .testimonial aqui -->
+        <div class="about-body">
+            <!-- 🔧 Altere nome e cargo se necessário -->
+            <div class="about-name">Patrick Santiago</div>
+            <div class="about-role">Fundador &amp; Curador</div>
+            <!-- 🔧 Altere o texto biográfico -->
+            <p class="about-text">
+                Apaixonado por futebol retrô e pela cultura das camisas históricas.
+                Desde <strong>2021</strong>, transformando vivência, identidade e persistência
+                em um projeto que representa mais do que estilo:
+                <strong>representa quem vive o jogo dentro e fora de campo.</strong>
+            </p>
+        </div>
 
     </div>
-    <!-- 🔧 FIM DEPOIMENTOS -->
+
+    <div class="divider scroll-reveal"><span class="divider-icon">✦</span></div>
 
 
     <!-- ============================================================
-         ✅ FOOTER — NÃO ALTERAR
-         🔧 Única exceção: atualize o ano no copyright se necessário.
-     ============================================================ -->
-    <footer>
+         🔧 POR QUE CONFIAR
+         Altere ícone, título e descrição de cada .trust-item.
+         Mantenha sempre 4 itens para o grid 2x2.
+         ============================================================ -->
+    <div class="section-label scroll-reveal">🏆 Por que confiar na CAMIS7A?</div>
+
+    <div class="trust-grid scroll-reveal">
+        <div class="trust-item">
+            <span class="trust-icon">📦</span>
+            <div class="trust-title">500+ Pedidos</div>
+            <div class="trust-desc">Centenas de clientes satisfeitos em todo o Brasil.</div>
+        </div>
+        <div class="trust-item">
+            <span class="trust-icon">🔄</span>
+            <div class="trust-title">Troca Garantida</div>
+            <div class="trust-desc">7 dias para troca sem burocracia, sem discussão.</div>
+        </div>
+        <div class="trust-item">
+            <span class="trust-icon">🚚</span>
+            <div class="trust-title">Envio Rastreado</div>
+            <div class="trust-desc">Código de rastreio enviado assim que o pedido sai.</div>
+        </div>
+        <div class="trust-item">
+            <span class="trust-icon">💬</span>
+            <div class="trust-title">Atendimento Real</div>
+            <div class="trust-desc">Atendemos pelo WhatsApp — sem robô, sem enrolação.</div>
+        </div>
+    </div>
+
+    <div class="divider scroll-reveal"><span class="divider-icon">✦</span></div>
+
+
+    <!-- ============================================================
+         🔧 FAQ
+         Altere pergunta (.faq-q-text) e resposta (.faq-answer p).
+         ⚠️ Mantenha sincronizado com o JSON-LD no <head>.
+         Para adicionar: copie um .faq-item completo.
+         ============================================================ -->
+    <div class="section-label scroll-reveal">❓ Perguntas Frequentes</div>
+
+    <div class="faq-list scroll-reveal">
+
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span class="faq-q-text">Vocês enviam para todo o Brasil?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <!-- 🔧 Prazo atualizado: 9 a 15 dias úteis -->
+                <p>Sim! Enviamos para todos os estados com rastreio incluído. O prazo varia entre 9 e 15 dias úteis dependendo da sua região.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span class="faq-q-text">Como funciona a troca?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>É simples e sem burocracia. Você tem até 7 dias após o recebimento para solicitar a troca pelo WhatsApp. Cuidamos de tudo para sua satisfação.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span class="faq-q-text">Quais são as formas de pagamento?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <!-- 🔧 Atualizado: site + WhatsApp como canais de venda -->
+                <p>Aceitamos Pix, cartão de crédito e débito. Você pode comprar pelo nosso site oficial (camis7a.com.br) ou diretamente pelo WhatsApp — os dois canais estão sempre ativos.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span class="faq-q-text">Quanto tempo demora a entrega?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <!-- 🔧 Prazo atualizado: 9 a 15 dias úteis -->
+                <p>Entre 9 e 15 dias úteis após a confirmação do pagamento. Você recebe o código de rastreio assim que o pedido é enviado.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ── FOOTER ── -->
+    <footer class="scroll-reveal">
         <div class="footer-logo">CAMIS7A™</div>
         <p class="footer-text">
             Curadoria de camisas para colecionadores apaixonados.<br>
@@ -762,14 +1069,115 @@
         </p>
         <div class="footer-badge">
             <span class="footer-dot"></span>
-            <!-- 🔧 Atualize o ano quando necessário -->
             © 2026 — Todos os direitos reservados
         </div>
     </footer>
-    <!-- ✅ FIM FOOTER -->
+
+</div>
 
 
-</div><!-- fim .wrap -->
+<!-- ============================================================
+     ✅ SCRIPTS — NÃO ALTERAR
+     ============================================================ -->
+<script>
+(function () {
+
+    /* ── 1. CURSOR ── */
+    var dot  = document.getElementById('cursorDot');
+    var ring = document.getElementById('cursorRing');
+    var dotX = 0, dotY = 0, ringX = 0, ringY = 0;
+
+    document.addEventListener('mousemove', function (e) {
+        dotX = e.clientX; dotY = e.clientY;
+        dot.style.left = dotX + 'px';
+        dot.style.top  = dotY + 'px';
+    });
+
+    (function animateRing() {
+        ringX += (dotX - ringX) * 0.12;
+        ringY += (dotY - ringY) * 0.12;
+        ring.style.left = ringX + 'px';
+        ring.style.top  = ringY + 'px';
+        requestAnimationFrame(animateRing);
+    })();
+
+    document.querySelectorAll('a, button').forEach(function (el) {
+        el.addEventListener('mouseenter', function () { document.body.classList.add('cursor-hover'); });
+        el.addEventListener('mouseleave', function () { document.body.classList.remove('cursor-hover'); });
+    });
+
+    if (window.matchMedia('(pointer: fine)').matches) {
+        document.body.style.cursor = 'none';
+    } else {
+        dot.style.display  = 'none';
+        ring.style.display = 'none';
+        document.body.style.cursor = '';
+    }
+
+
+    /* ── 2. CONTADOR ── */
+    function animateCounter(el) {
+        var target   = parseInt(el.getAttribute('data-target'), 10);
+        var suffix   = el.getAttribute('data-suffix') || '';
+        var prefix   = el.getAttribute('data-prefix') || '';
+        var duration = 1800;
+        var start    = null;
+        function step(ts) {
+            if (!start) start = ts;
+            var p = Math.min((ts - start) / duration, 1);
+            var ease = 1 - Math.pow(1 - p, 3);
+            el.textContent = prefix + Math.floor(ease * target) + suffix;
+            if (p < 1) requestAnimationFrame(step);
+            else el.textContent = prefix + target + suffix;
+        }
+        requestAnimationFrame(step);
+    }
+
+    var counters = document.querySelectorAll('.counter');
+    var countersDone = false;
+    if (counters.length) {
+        new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting && !countersDone) {
+                countersDone = true;
+                counters.forEach(animateCounter);
+            }
+        }, { threshold: 0.5 }).observe(counters[0].closest('.stats-bar'));
+    }
+
+
+    /* ── 3. SCROLL REVEAL ── */
+    var revealObs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal');
+                revealObs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.scroll-reveal').forEach(function (el) {
+        revealObs.observe(el);
+    });
+
+
+    /* ── 4. FAQ ACCORDION ── */
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var item   = btn.closest('.faq-item');
+            var isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(function (i) {
+                i.classList.remove('open');
+                i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            });
+            if (!isOpen) {
+                item.classList.add('open');
+                btn.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+
+})();
+</script>
 
 </body>
 </html>
