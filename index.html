@@ -4,30 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CAMIS7A™ | Camisas de Futebol Retrô e Históricas</title>
+    <!-- ✅ TÍTULO ATUALIZADO -->
+    <title>CAMIS7A™ | Camisas de Futebol Retrô, Históricas e Lançamentos</title>
 
-    <!-- ✅ CANONICAL — previne conteúdo duplicado no GitHub Pages -->
     <link rel="canonical" href="https://camis7a.github.io/">
-
-    <!-- ✅ GOOGLEBOT — força indexação completa -->
     <meta name="googlebot" content="index,follow">
 
-    <!-- ✅ META DESCRIPTION atualizada com produto, preço e benefício -->
-    <meta name="description" content="Camisas de futebol retrô com qualidade premium. Brasil 2026 Retrô 1970 por R$ 179,90. Envio rastreado para todo o Brasil. Fundada em 2021 por Patrick Santiago.">
+    <!-- ✅ META DESCRIPTION ATUALIZADA -->
+    <meta name="description" content="Camisas de futebol retrô, históricas e lançamentos com qualidade premium. Brasil 2026 Inspirada 1970 por R$ 229,90. Envio rastreado para todo o Brasil.">
     <meta name="author" content="CAMIS7A™">
 
-    <meta property="og:title" content="CAMIS7A™ | Relíquias do Futebol">
-    <meta property="og:description" content="Mantos históricos e lançamentos exclusivos. Qualidade premium para quem vive o futebol.">
+    <meta property="og:title" content="CAMIS7A™ | Camisas de Futebol Retrô, Históricas e Lançamentos">
+    <meta property="og:description" content="Camisas históricas e lançamentos exclusivos. Qualidade premium para quem vive o futebol.">
     <meta property="og:image" content="https://camis7a.github.io/imagens/og-cover.jpg">
     <meta property="og:url" content="https://camis7a.github.io">
     <meta property="og:type" content="website">
 
-    <!-- ============================================================
-         DADOS ESTRUTURADOS — Organização
-         ✅ URL corrigida para camis7a.github.io
-         ✅ contactPoint com WhatsApp adicionado
-         🔧 Atualize sameAs se adicionar novos canais.
-         ============================================================ -->
+    <!-- DADOS ESTRUTURADOS — Organização -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -39,8 +32,7 @@
         "@type": "ContactPoint",
         "telephone": "+55-84-92153-6087",
         "contactType": "sales",
-        "availableLanguage": "Portuguese",
-        "contactOption": "TollFree"
+        "availableLanguage": "Portuguese"
       },
       "sameAs": [
         "https://www.camis7a.com.br",
@@ -58,10 +50,7 @@
     }
     </script>
 
-    <!-- ============================================================
-         DADOS ESTRUTURADOS — FAQ
-         🔧 Mantenha sincronizado com o FAQ no HTML abaixo.
-         ============================================================ -->
+    <!-- DADOS ESTRUTURADOS — FAQ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -70,34 +59,22 @@
         {
           "@type": "Question",
           "name": "Vocês enviam para todo o Brasil?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sim! Enviamos para todos os estados do Brasil com rastreio incluído. O prazo de entrega varia entre 9 e 15 dias úteis dependendo da sua região."
-          }
+          "acceptedAnswer": { "@type": "Answer", "text": "Sim! Enviamos para todos os estados do Brasil com rastreio incluído. O prazo de entrega varia entre 9 e 15 dias úteis dependendo da sua região." }
         },
         {
           "@type": "Question",
           "name": "Como funciona a troca?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "É simples e sem burocracia. Você tem até 7 dias após o recebimento para solicitar a troca pelo WhatsApp. Cuidamos de tudo para sua satisfação."
-          }
+          "acceptedAnswer": { "@type": "Answer", "text": "É simples e sem burocracia. Você tem até 7 dias após o recebimento para solicitar a troca pelo WhatsApp. Cuidamos de tudo para sua satisfação." }
         },
         {
           "@type": "Question",
           "name": "Quais são as formas de pagamento?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Aceitamos Pix, cartão de crédito e débito, tanto pelo site oficial (camis7a.com.br) quanto diretamente pelo WhatsApp, que também é um canal de vendas ativo."
-          }
+          "acceptedAnswer": { "@type": "Answer", "text": "Aceitamos Pix, cartão de crédito e débito, tanto pelo site oficial (camis7a.com.br) quanto diretamente pelo WhatsApp, que também é um canal de vendas ativo." }
         },
         {
           "@type": "Question",
           "name": "Quanto tempo demora a entrega?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Entre 9 e 15 dias úteis após a confirmação do pagamento. Você recebe o código de rastreio assim que o pedido é enviado."
-          }
+          "acceptedAnswer": { "@type": "Answer", "text": "Entre 9 e 15 dias úteis após a confirmação do pagamento. Você recebe o código de rastreio assim que o pedido é enviado." }
         }
       ]
     }
@@ -114,7 +91,6 @@
             --green-dim: rgba(34, 197, 94, 0.15);
             --green-glow: rgba(34, 197, 94, 0.3);
             --gold: #d4a853;
-            --gold-dim: rgba(212, 168, 83, 0.15);
             --bg: #07080a;
             --surface: #111318;
             --surface2: #161a20;
@@ -138,71 +114,31 @@
         }
 
         /* ── CURSOR ── */
-        .cursor-dot {
-            position: fixed; width: 8px; height: 8px;
-            background: var(--green); border-radius: 50%;
-            pointer-events: none; z-index: 99999;
-            transform: translate(-50%, -50%);
-            box-shadow: 0 0 10px var(--green), 0 0 20px var(--green-glow);
-            transition: width .2s, height .2s, background .2s;
-        }
-        .cursor-ring {
-            position: fixed; width: 32px; height: 32px;
-            border: 1.5px solid rgba(34,197,94,0.5); border-radius: 50%;
-            pointer-events: none; z-index: 99998;
-            transform: translate(-50%, -50%);
-            transition: width .2s, height .2s, border-color .2s;
-        }
+        .cursor-dot { position: fixed; width: 8px; height: 8px; background: var(--green); border-radius: 50%; pointer-events: none; z-index: 99999; transform: translate(-50%, -50%); box-shadow: 0 0 10px var(--green), 0 0 20px var(--green-glow); transition: width .2s, height .2s, background .2s; }
+        .cursor-ring { position: fixed; width: 32px; height: 32px; border: 1.5px solid rgba(34,197,94,0.5); border-radius: 50%; pointer-events: none; z-index: 99998; transform: translate(-50%, -50%); transition: width .2s, height .2s, border-color .2s; }
         body.cursor-hover .cursor-dot { width: 12px; height: 12px; background: var(--gold); box-shadow: 0 0 14px var(--gold); }
         body.cursor-hover .cursor-ring { width: 44px; height: 44px; border-color: rgba(212,168,83,0.5); }
 
         /* ── GRAIN ── */
-        body::before {
-            content: ''; position: fixed; inset: 0;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-            pointer-events: none; z-index: 9999; opacity: 0.5;
-        }
+        body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; opacity: 0.5; }
 
         /* ── AMBIENT ── */
-        .ambient {
-            position: fixed; top: -30vh; left: 50%; transform: translateX(-50%);
-            width: 700px; height: 500px;
-            background: radial-gradient(ellipse, rgba(34,197,94,0.07) 0%, transparent 70%);
-            pointer-events: none; z-index: 0;
-        }
+        .ambient { position: fixed; top: -30vh; left: 50%; transform: translateX(-50%); width: 700px; height: 500px; background: radial-gradient(ellipse, rgba(34,197,94,0.07) 0%, transparent 70%); pointer-events: none; z-index: 0; }
 
         .wrap { position: relative; z-index: 1; max-width: 480px; margin: 0 auto; padding: 0 20px 60px; }
 
         /* ── HEADER ── */
         header { padding: 48px 0 36px; text-align: center; animation: fadeUp .8s ease both; }
 
-        /* ✅ H1 visualmente invisível mas semanticamente presente */
-        .visually-hidden {
-            position: absolute;
-            width: 1px; height: 1px;
-            padding: 0; margin: -1px;
-            overflow: hidden; clip: rect(0,0,0,0);
-            white-space: nowrap; border: 0;
-        }
+        .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
         .logo-wrap { position: relative; display: inline-block; margin-bottom: 20px; }
-
-        .logo-ring {
-            position: absolute; inset: -12px; border-radius: 50%;
-            border: 1px solid rgba(34,197,94,0.2);
-            animation: spin 20s linear infinite;
-        }
-        .logo-ring::before {
-            content: ''; position: absolute; top: -2px; left: 50%;
-            transform: translateX(-50%); width: 4px; height: 4px;
-            background: var(--green); border-radius: 50%; box-shadow: 0 0 8px var(--green);
-        }
-
+        .logo-ring { position: absolute; inset: -12px; border-radius: 50%; border: 1px solid rgba(34,197,94,0.2); animation: spin 20s linear infinite; }
+        .logo-ring::before { content: ''; position: absolute; top: -2px; left: 50%; transform: translateX(-50%); width: 4px; height: 4px; background: var(--green); border-radius: 50%; box-shadow: 0 0 8px var(--green); }
         .logo-img { width: 80px; height: 80px; object-fit: contain; display: block; filter: drop-shadow(0 0 16px rgba(34,197,94,0.4)); position: relative; z-index: 1; }
 
         .brand-name { font-family: 'Bebas Neue', sans-serif; font-size: 42px; letter-spacing: 4px; line-height: 1; color: var(--white); margin-bottom: 6px; }
         .brand-name span { color: var(--green); }
-
         .tagline { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--muted); line-height: 1.8; }
 
         /* ── DIVIDER ── */
@@ -210,63 +146,33 @@
         .divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--border-lit), transparent); }
         .divider-icon { font-size: 12px; color: var(--muted); }
 
-        /* ── SECTION LABEL
-           ✅ Agora são H2/H3 reais estilizados para parecer igual ao design anterior.
-           O Google lê como heading — o usuário vê igual a antes. ── */
-        .section-label {
-            font-family: 'DM Mono', monospace;
-            font-size: 9px; letter-spacing: 3px; text-transform: uppercase;
-            color: var(--green); margin-bottom: 14px;
-            display: flex; align-items: center; gap: 8px;
-            font-weight: 400; /* reseta o bold padrão de h2/h3 */
-        }
+        /* ── SECTION LABEL (H2/H3 semântico) ── */
+        .section-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--green); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; font-weight: 400; }
         .section-label::after { content: ''; flex: 1; height: 1px; background: var(--green-dim); }
 
         /* ── STATS ── */
-        .stats-bar {
-            display: grid; grid-template-columns: 1fr 1fr 1fr;
-            gap: 1px; background: var(--border); border-radius: 12px;
-            overflow: hidden; margin-bottom: 28px;
-            animation: fadeUp .8s .05s ease both;
-        }
+        .stats-bar { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 28px; animation: fadeUp .8s .05s ease both; }
         .stat { background: var(--surface); padding: 16px 12px; text-align: center; }
         .stat-value { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 1px; color: var(--white); line-height: 1; margin-bottom: 3px; }
         .stat-value span { color: var(--green); }
         .stat-label { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
 
         /* ── PRODUTO CARD ── */
-        .featured-card {
-            display: block; text-decoration: none;
-            background: var(--surface); border: 1px solid var(--border);
-            border-radius: 16px; overflow: hidden; margin-bottom: 12px;
-            position: relative; transition: border-color .3s, transform .3s, box-shadow .3s;
-            animation: fadeUp .8s .1s ease both;
-        }
+        .featured-card { display: block; text-decoration: none; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; margin-bottom: 12px; position: relative; transition: border-color .3s, transform .3s, box-shadow .3s; animation: fadeUp .8s .1s ease both; }
         .featured-card:hover { border-color: rgba(212,168,83,0.4); transform: translateY(-3px); box-shadow: 0 16px 48px rgba(0,0,0,0.5), 0 0 0 1px rgba(212,168,83,0.1); }
 
-        .featured-card::before {
-            content: ''; position: absolute; top: 0; left: -100%; width: 60%; height: 100%;
-            background: linear-gradient(105deg, transparent 20%, rgba(255,255,255,0.04) 50%, transparent 80%);
-            z-index: 5; pointer-events: none; animation: shimmer 3.5s ease infinite;
-        }
+        /* Shimmer */
+        .featured-card::before { content: ''; position: absolute; top: 0; left: -100%; width: 60%; height: 100%; background: linear-gradient(105deg, transparent 20%, rgba(255,255,255,0.04) 50%, transparent 80%); z-index: 5; pointer-events: none; animation: shimmer 3.5s ease infinite; }
         @keyframes shimmer { 0% { left: -100%; } 40% { left: 150%; } 100% { left: 150%; } }
 
-        .card-img-area {
-            position: relative; background: linear-gradient(135deg, #0a0c10 0%, #111620 100%);
-            height: 180px; display: flex; align-items: center; justify-content: center; overflow: hidden;
-        }
+        .card-img-area { position: relative; background: linear-gradient(135deg, #0a0c10 0%, #111620 100%); height: 180px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
         .card-img-area::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 60px; background: linear-gradient(transparent, var(--surface)); z-index: 2; pointer-events: none; }
         .card-placeholder { font-size: 64px; opacity: 0.1; }
         .card-img-area img { width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform .5s ease; }
         .featured-card:hover .card-img-area img { transform: scale(1.04); }
 
-        .card-badge {
-            position: absolute; top: 12px; left: 12px; z-index: 3;
-            background: var(--gold); color: #000; font-family: 'DM Mono', monospace;
-            font-size: 9px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase;
-            padding: 4px 10px; border-radius: 4px;
-            animation: badgePulse 2.5s ease infinite; transform-origin: left center;
-        }
+        /* Badge pulsante */
+        .card-badge { position: absolute; top: 12px; left: 12px; z-index: 3; background: var(--gold); color: #000; font-family: 'DM Mono', monospace; font-size: 9px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; padding: 4px 10px; border-radius: 4px; animation: badgePulse 2.5s ease infinite; transform-origin: left center; }
         @keyframes badgePulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(212,168,83,0.4); } 50% { box-shadow: 0 0 0 6px rgba(212,168,83,0); } }
 
         .card-body { padding: 16px 20px 20px; }
@@ -276,10 +182,6 @@
         .card-price { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 1px; color: var(--green); }
         .card-cta { background: var(--gold); color: #000; font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; padding: 8px 14px; border-radius: 8px; transition: opacity .2s; }
         .featured-card:hover .card-cta { opacity: 0.85; }
-
-        .coming-card { background: var(--surface); border: 1px dashed rgba(255,255,255,0.07); border-radius: 16px; padding: 22px 20px; text-align: center; margin-bottom: 12px; animation: fadeUp .8s .2s ease both; }
-        .coming-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
-        .coming-title { font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 1px; color: rgba(255,255,255,0.2); }
 
         /* ── LINKS ── */
         .links-group { display: flex; flex-direction: column; gap: 8px; }
@@ -294,20 +196,55 @@
         .link-arrow { color: var(--muted); font-size: 14px; transition: color .2s; }
         .link-item:hover .link-arrow { color: var(--green); }
 
-        /* ── CARROSSEL DEPOIMENTOS ── */
+        /* ── CARROSSEL DE DEPOIMENTOS ─────────────────────────────────
+           Cada card agora tem: foto redonda + nome + estrelas em linha,
+           texto do depoimento abaixo.
+           ✅ NÃO ALTERAR o CSS — edite apenas o HTML.
+        ──────────────────────────────────────────────────────────── */
         .testimonials-track-wrap { overflow: hidden; margin: 0 -20px; padding: 4px 0; }
-        .testimonials-track { display: flex; gap: 12px; width: max-content; animation: marquee 28s linear infinite; }
+        .testimonials-track { display: flex; gap: 12px; width: max-content; animation: marquee 36s linear infinite; }
         .testimonials-track-wrap:hover .testimonials-track { animation-play-state: paused; }
         @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-        .testimonial { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; position: relative; width: 280px; flex-shrink: 0; transition: border-color .25s; }
+        .testimonial { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; position: relative; width: 300px; flex-shrink: 0; transition: border-color .25s; }
         .testimonial:hover { border-color: rgba(34,197,94,0.2); }
-        .testimonial::before { content: '"'; position: absolute; top: 8px; right: 14px; font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: rgba(255,255,255,0.03); line-height: 1; }
-        .t-text { font-size: 12px; line-height: 1.65; color: #94a3b8; margin-bottom: 12px; font-style: italic; }
-        .t-author { display: flex; align-items: center; gap: 10px; }
-        .t-avatar { width: 26px; height: 26px; border-radius: 50%; background: var(--green-dim); border: 1px solid rgba(34,197,94,0.2); display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', sans-serif; font-size: 12px; color: var(--green); flex-shrink: 0; }
-        .t-name { font-size: 11px; font-weight: 500; color: var(--text); }
-        .t-stars { font-size: 10px; color: var(--gold); letter-spacing: 1px; }
+
+        /* Linha superior: foto + nome + estrelas */
+        .t-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+
+        /* Foto redonda do cliente */
+        .t-photo {
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            border: 2px solid rgba(34,197,94,0.25);
+        }
+
+        /* Fallback se foto não carregar */
+        .t-photo-fallback {
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            background: var(--green-dim);
+            border: 2px solid rgba(34,197,94,0.25);
+            display: flex; align-items: center; justify-content: center;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 18px; color: var(--green);
+            flex-shrink: 0;
+        }
+
+        .t-meta { flex: 1; min-width: 0; }
+        .t-name { font-size: 12px; font-weight: 600; color: var(--white); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 2px; }
+        .t-location { font-size: 10px; color: var(--muted); margin-bottom: 3px; }
+        .t-stars { font-size: 11px; color: var(--gold); letter-spacing: 1px; }
+
+        /* Texto do depoimento abaixo do header */
+        .t-text { font-size: 12px; line-height: 1.65; color: #94a3b8; font-style: italic; }
+
+        /* Badge Google My Business */
+        .t-source { display: flex; align-items: center; gap: 4px; margin-top: 10px; }
+        .t-source-dot { width: 6px; height: 6px; border-radius: 50%; background: #4285f4; flex-shrink: 0; }
+        .t-source-label { font-family: 'DM Mono', monospace; font-size: 8px; letter-spacing: 1px; color: #475569; text-transform: uppercase; }
 
         /* ── QUEM SOU ── */
         .about-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 22px 20px; display: flex; gap: 16px; align-items: flex-start; transition: border-color .25s; }
@@ -353,6 +290,23 @@
         .footer-badge { display: inline-flex; align-items: center; gap: 6px; background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 4px 12px; font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1.5px; color: var(--muted); margin-top: 14px; }
         .footer-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 6px var(--green); animation: pulse 2s ease infinite; }
 
+        /* Links institucionais no rodapé */
+        .footer-links {
+            display: flex; flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px 16px;
+            margin-top: 20px;
+        }
+        .footer-links a {
+            font-family: 'DM Mono', monospace;
+            font-size: 9px; letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #334155;
+            text-decoration: none;
+            transition: color .2s;
+        }
+        .footer-links a:hover { color: var(--green); }
+
         /* ── ANIMAÇÕES ── */
         @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
@@ -371,35 +325,24 @@
 
     <!-- ── HEADER ── -->
     <header>
-
-        <!-- ✅ H1 único da página — visível para o Google, invisível para o usuário -->
-        <h1 class="visually-hidden">CAMIS7A™ | Camisas de Futebol Retrô e Históricas</h1>
-
+        <h1 class="visually-hidden">CAMIS7A™ | Camisas de Futebol Retrô, Históricas e Lançamentos</h1>
         <div class="logo-wrap">
-            <!-- ✅ Alt text otimizado com palavras-chave -->
             <img src="imagens/logo.png"
-                 alt="Logo CAMIS7A — camisas de futebol retrô e históricas"
+                 alt="Logo CAMIS7A — camisas de futebol retrô, históricas e lançamentos"
                  class="logo-img" width="80" height="80"
                  onerror="this.style.display='none'">
             <div class="logo-ring"></div>
         </div>
-
         <div class="brand-name" aria-hidden="true">CAMIS<span>7</span>A™</div>
         <p class="tagline">
-            Camisas de Futebol Retrô<br>
+            Camisas de Futebol Retrô, Históricas e Lançamentos<br>
             Qualidade Premium &bull; Envio para Todo Brasil
         </p>
     </header>
 
 
-    <!-- ============================================================
-         🔧 STATS
-         data-target = valor final | data-suffix = sufixo (ex: "+")
-         ============================================================ -->
-
-    <!-- ✅ H2 semântico — Google entende esta como seção principal de produtos -->
-    <h2 class="visually-hidden">Camisas Retrô em Destaque</h2>
-
+    <!-- ── STATS ── -->
+    <h2 class="visually-hidden">Camisas em Destaque</h2>
     <div class="stats-bar">
         <div class="stat">
             <div class="stat-value"><span class="counter" data-target="500" data-suffix="+">0</span></div>
@@ -416,21 +359,23 @@
     </div>
 
 
-    <!-- ✅ H2 visível como section-label — semântico E estilizado -->
+    <!-- ── PRODUTOS ── -->
     <h2 class="section-label">⚽ Produtos em Destaque</h2>
 
-    <!-- Produto 1 -->
+    <!-- ============================================================
+         🔧 PRODUTO 1 — Camisa Brasil 2026 Inspirada 1970 (Amarela)
+         ✅ "Retrô" alterado para "Inspirada" em todos os campos
+         ============================================================ -->
     <a href="camisa-selecao-brasileira-2026-inspirada-1970.html" class="featured-card">
         <div class="card-img-area">
-            <!-- ✅ Alt text com palavras-chave de produto + marca -->
             <img src="imagens/brasil-2026-amarela/camisa-frente.png"
-                 alt="Camisa Seleção Brasileira retrô 1970 amarela premium CAMIS7A"
+                 alt="Camisa Seleção Brasileira 2026 Inspirada 1970 Amarela Premium CAMIS7A"
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <div class="card-placeholder" style="display:none;">🇧🇷</div>
             <div class="card-badge">⚡ Pronta Entrega</div>
         </div>
         <div class="card-body">
-            <div class="card-title">Brasil 2026 — Edição Retrô 1970</div>
+            <div class="card-title">Brasil 2026 — Edição Inspirada 1970</div>
             <div class="card-sub">Seleção Brasileira &bull; Amarela &bull; Escudo bordado</div>
             <div class="card-footer">
                 <div class="card-price">R$ 229,90</div>
@@ -439,16 +384,36 @@
         </div>
     </a>
 
-    <!-- Em breve: Camisa Azul -->
-    <div class="coming-card">
-        <div class="coming-label">Em breve</div>
-        <div class="coming-title">Brasil 2026 — Seleção Azul</div>
-    </div>
+    <!-- ============================================================
+         🔧 PRODUTO 2 — Camisa Brasil 2026 Azul Torcedor Pro
+         ✅ Novo produto adicionado como card ativo
+         🔧 Atualize o href quando a página do produto estiver pronta.
+         ============================================================ -->
+    <a href="camisa-selecao-brasileira-2026-azul-torcedor-pro.html" class="featured-card">
+        <div class="card-img-area">
+            <img src="imagens/brasil-2026-azul/camisa-frente.png"
+                 loading="lazy"
+                 alt="Camisa Seleção Brasileira 2026 Azul Torcedor Pro Masculina Premium CAMIS7A"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="card-placeholder" style="display:none;">🇧🇷</div>
+            <div class="card-badge">🔥 Lançamento</div>
+        </div>
+        <div class="card-body">
+            <div class="card-title">Brasil 2026 — Azul Torcedor Pro</div>
+            <div class="card-sub">Seleção Brasileira &bull; Azul &bull; Masculina Premium</div>
+            <div class="card-footer">
+                <div class="card-price">R$ 229,90</div>
+                <div class="card-cta">Garantir →</div>
+            </div>
+        </div>
+    </a>
+
+    <!-- 💡 Novos produtos: cole .featured-card aqui -->
 
     <div class="divider"><span class="divider-icon">✦</span></div>
 
 
-    <!-- ✅ H2 semântico nos canais -->
+    <!-- ── CANAIS ── -->
     <h2 class="section-label scroll-reveal">📲 Onde nos encontrar</h2>
 
     <div class="links-group scroll-reveal">
@@ -498,7 +463,6 @@
             <div class="link-arrow">›</div>
         </a>
 
-        <!-- 🔧 LinkedIn — confirme seu URL exato -->
         <a href="https://www.linkedin.com/in/patricksantiago-camisas-retro/" target="_blank" rel="noopener noreferrer" class="link-item">
             <div class="link-icon">💼</div>
             <div class="link-info">
@@ -513,101 +477,199 @@
     <div class="divider scroll-reveal"><span class="divider-icon">✦</span></div>
 
 
-    <!-- ✅ H3 nos depoimentos — hierarquia correta abaixo do H2 de produtos -->
+    <!-- ============================================================
+         🔧 DEPOIMENTOS — CARROSSEL COM FOTO
+         Cada card: foto redonda + nome + cidade + estrelas + texto.
+
+         PARA ADICIONAR depoimento:
+         Cole um bloco .testimonial nos ORIGINAIS e outro idêntico
+         nas DUPLICATAS — necessário para o loop infinito funcionar.
+
+         PARA REMOVER: apague o bloco dos dois grupos.
+
+         Fotos em: imagens/depoimentos/NOME-DO-ARQUIVO.jpg
+         ============================================================ -->
     <h3 class="section-label scroll-reveal">★ O que dizem nossos clientes</h3>
 
     <div class="testimonials-track-wrap scroll-reveal">
-        <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonials-track">
 
-            <!-- ORIGINAIS -->
+            <!-- ── ORIGINAIS ── -->
+
+            <!-- Janilson Barros -->
             <div class="testimonial">
-                <p class="t-text">Qualidade incrível. O escudo bordado é perfeito e o tecido é muito mais premium do que eu esperava pelo preço.</p>
-                <div class="t-author">
-                    <!-- ✅ Alt text no avatar -->
-                    <div class="t-avatar" aria-label="Avatar Carlos Miguel">C</div>
-                    <div>
-                        <div class="t-name">Carlos Miguel — Recife, PE</div>
-                        <div class="t-stars" aria-label="5 estrelas">★★★★★</div>
+                <div class="t-header">
+                    <img src="imagens/depoimentos/depoimento-janilson-camis7a.jpg"
+                         loading="lazy"
+                         alt="Foto de Janilson Barros — cliente CAMIS7A"
+                         class="t-photo"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="t-photo-fallback">J</div>
+                    <div class="t-meta">
+                        <div class="t-name">Janilson Barros</div>
+                        <div class="t-location">Natal, RN</div>
+                        <div class="t-stars">★★★★★</div>
                     </div>
                 </div>
+                <p class="t-text">"Fiquei surpreso com a qualidade do tecido, veste bem. Agora é só esperar pra assistir o hexa. Bora Brasil"</p>
+                <div class="t-source"><div class="t-source-dot"></div><span class="t-source-label">Google My Business</span></div>
+            </div>
+
+            <!-- Joseffer Lira -->
+            <div class="testimonial">
+                <div class="t-header">
+                    <img src="imagens/depoimentos/depoimento-joseffer-camis7a.jpg"
+                         loading="lazy"
+                         alt="Foto de Joseffer Lira — cliente CAMIS7A"
+                         class="t-photo"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="t-photo-fallback">J</div>
+                    <div class="t-meta">
+                        <div class="t-name">Joseffer Lira</div>
+                        <div class="t-location">Natal, RN</div>
+                        <div class="t-stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="t-text">"Produto top de qualidade extraordinária, recomendo. Assim que solicitei o produto, de imediato chegou. Muito eficiente!"</p>
+                <div class="t-source"><div class="t-source-dot"></div><span class="t-source-label">Google My Business</span></div>
+            </div>
+
+            <!-- Teresa Cristina -->
+            <div class="testimonial">
+                <div class="t-header">
+                    <img src="imagens/depoimentos/depoimento-teresa-camis7a.jpg"
+                         loading="lazy"
+                         alt="Foto de Teresa Cristina — cliente CAMIS7A"
+                         class="t-photo"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="t-photo-fallback">T</div>
+                    <div class="t-meta">
+                        <div class="t-name">Teresa Cristina</div>
+                        <div class="t-location">Natal, RN</div>
+                        <div class="t-stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="t-text">"Comprei de presente pro meu neto, superou minhas expectativas. Super recomendo, o tecido é de alta qualidade, a costura não tem defeitos 👏"</p>
+                <div class="t-source"><div class="t-source-dot"></div><span class="t-source-label">Google My Business</span></div>
+            </div>
+
+            <!-- Vinicius Oliveira -->
+            <div class="testimonial">
+                <div class="t-header">
+                    <img src="imagens/depoimentos/depoimento-vinicius-camis7a.jpg"
+                         loading="lazy"
+                         alt="Foto de Vinicius Oliveira — cliente CAMIS7A"
+                         class="t-photo"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="t-photo-fallback">V</div>
+                    <div class="t-meta">
+                        <div class="t-name">Vinicius Oliveira</div>
+                        <div class="t-location">Natal, RN</div>
+                        <div class="t-stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="t-text">"Patrick correu atrás do modelo e entregou! Qualidade top, padrão original. Tecido, bordado e acabamento que valem cada centavo. Melhor custo-benefício."</p>
+                <div class="t-source"><div class="t-source-dot"></div><span class="t-source-label">Google My Business</span></div>
+            </div>
+
+            <!-- Mailton Eduardo -->
+            <div class="testimonial">
+                <div class="t-header">
+                    <img src="imagens/depoimentos/depoimento-mailton-camis7a.jpg"
+                         loading="lazy"
+                         alt="Foto de Mailton Eduardo — cliente CAMIS7A"
+                         class="t-photo"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="t-photo-fallback">M</div>
+                    <div class="t-meta">
+                        <div class="t-name">Mailton Eduardo</div>
+                        <div class="t-location">Natal, RN</div>
+                        <div class="t-stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="t-text">"Gostei demais dessa camisa do Vascão e vocês que não compraram ainda — eu indico muito essa loja top ❤️🥇"</p>
+                <div class="t-source"><div class="t-source-dot"></div><span class="t-source-label">Google My Business</span></div>
+            </div>
+
+            <!-- João Paulo de Araújo -->
+            <div class="testimonial">
+                <div class="t-header">
+                    <img src="imagens/depoimentos/depoimento-joao-paulo-camis7a.jpg"
+                         loading="lazy"
+                         alt="Foto de João Paulo de Araújo — cliente CAMIS7A"
+                         class="t-photo"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="t-photo-fallback">J</div>
+                    <div class="t-meta">
+                        <div class="t-name">João Paulo de Araújo</div>
+                        <div class="t-location">Natal, RN</div>
+                        <div class="t-stars">★★★★★</div>
+                    </div>
+                </div>
+                <p class="t-text">"Material top, super recomendo."</p>
+                <div class="t-source"><div class="t-source-dot"></div><span class="t-source-label">Google My Business</span></div>
+            </div>
+
+            <!-- ── DUPLICATAS (necessário para loop infinito) ── -->
+
+            <div class="testimonial">
+                <div class="t-header">
+                    <img src="imagens/depoimentos/depoimento-janilson-camis7a.jpg" loading="lazy" alt="Foto de Janilson Barros — cliente CAMIS7A" class="t-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="t-photo-fallback">J</div>
+                    <div class="t-meta"><div class="t-name">Janilson Barros</div><div class="t-location">Natal, RN</div><div class="t-stars">★★★★★</div></div>
+                </div>
+                <p class="t-text">"Fiquei surpreso com a qualidade do tecido, veste bem. Agora é só esperar pra assistir o hexa. Bora Brasil"</p>
+                <div class="t-source"><div class="t-source-dot"></div><span class="t-source-label">Google My Business</span></div>
             </div>
 
             <div class="testimonial">
-                <p class="t-text">Chegou rápido e embalada direitinho. Comprei a retrô 1970 e já quero a azul. Recomendo sem hesitar.</p>
-                <div class="t-author">
-                    <div class="t-avatar" aria-label="Avatar Rodrigo Silva">R</div>
-                    <div>
-                        <div class="t-name">Rodrigo Silva — Natal, RN</div>
-                        <div class="t-stars" aria-label="5 estrelas">★★★★★</div>
-                    </div>
+                <div class="t-header">
+                    <img src="imagens/depoimentos/depoimento-joseffer-camis7a.jpg" loading="lazy" alt="Foto de Joseffer Lira — cliente CAMIS7A" class="t-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="t-photo-fallback">J</div>
+                    <div class="t-meta"><div class="t-name">Joseffer Lira</div><div class="t-location">Natal, RN</div><div class="t-stars">★★★★★</div></div>
                 </div>
+                <p class="t-text">"Produto top de qualidade extraordinária, recomendo. Assim que solicitei o produto, de imediato chegou. Muito eficiente!"</p>
+                <div class="t-source"><div class="t-source-dot"></div><span class="t-source-label">Google My Business</span></div>
             </div>
 
             <div class="testimonial">
-                <p class="t-text">Presente perfeito pro meu marido. Colecionador inveterado — disse que é uma das melhores que já teve. Voltarei a comprar!</p>
-                <div class="t-author">
-                    <div class="t-avatar" aria-label="Avatar Ana Paula">A</div>
-                    <div>
-                        <div class="t-name">Ana Paula — Fortaleza, CE</div>
-                        <div class="t-stars" aria-label="5 estrelas">★★★★★</div>
-                    </div>
+                <div class="t-header">
+                    <img src="imagens/depoimentos/depoimento-teresa-camis7a.jpg" loading="lazy" alt="Foto de Teresa Cristina — cliente CAMIS7A" class="t-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="t-photo-fallback">T</div>
+                    <div class="t-meta"><div class="t-name">Teresa Cristina</div><div class="t-location">Natal, RN</div><div class="t-stars">★★★★★</div></div>
                 </div>
+                <p class="t-text">"Comprei de presente pro meu neto, superou minhas expectativas. Super recomendo, o tecido é de alta qualidade, a costura não tem defeitos 👏"</p>
+                <div class="t-source"><div class="t-source-dot"></div><span class="t-source-label">Google My Business</span></div>
             </div>
 
             <div class="testimonial">
-                <p class="t-text">Atendimento impecável pelo WhatsApp. Tirei todas as dúvidas antes de comprar e não me arrependi nada!</p>
-                <div class="t-author">
-                    <div class="t-avatar" aria-label="Avatar Marcelo T.">M</div>
-                    <div>
-                        <div class="t-name">Marcelo T. — São Paulo, SP</div>
-                        <div class="t-stars" aria-label="5 estrelas">★★★★★</div>
-                    </div>
+                <div class="t-header">
+                    <img src="imagens/depoimentos/depoimento-vinicius-camis7a.jpg" loading="lazy" alt="Foto de Vinicius Oliveira — cliente CAMIS7A" class="t-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="t-photo-fallback">V</div>
+                    <div class="t-meta"><div class="t-name">Vinicius Oliveira</div><div class="t-location">Natal, RN</div><div class="t-stars">★★★★★</div></div>
                 </div>
-            </div>
-
-            <!-- DUPLICATAS para loop infinito -->
-            <div class="testimonial">
-                <p class="t-text">Qualidade incrível. O escudo bordado é perfeito e o tecido é muito mais premium do que eu esperava pelo preço.</p>
-                <div class="t-author">
-                    <div class="t-avatar" aria-label="Avatar Carlos Miguel">C</div>
-                    <div>
-                        <div class="t-name">Carlos Miguel — Recife, PE</div>
-                        <div class="t-stars" aria-label="5 estrelas">★★★★★</div>
-                    </div>
-                </div>
+                <p class="t-text">"Patrick correu atrás do modelo e entregou! Qualidade top, padrão original. Tecido, bordado e acabamento que valem cada centavo. Melhor custo-benefício."</p>
+                <div class="t-source"><div class="t-source-dot"></div><span class="t-source-label">Google My Business</span></div>
             </div>
 
             <div class="testimonial">
-                <p class="t-text">Chegou rápido e embalada direitinho. Comprei a retrô 1970 e já quero a azul. Recomendo sem hesitar.</p>
-                <div class="t-author">
-                    <div class="t-avatar" aria-label="Avatar Rodrigo Silva">R</div>
-                    <div>
-                        <div class="t-name">Rodrigo Silva — Natal, RN</div>
-                        <div class="t-stars" aria-label="5 estrelas">★★★★★</div>
-                    </div>
+                <div class="t-header">
+                    <img src="imagens/depoimentos/depoimento-mailton-camis7a.jpg" loading="lazy" alt="Foto de Mailton Eduardo — cliente CAMIS7A" class="t-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="t-photo-fallback">M</div>
+                    <div class="t-meta"><div class="t-name">Mailton Eduardo</div><div class="t-location">Natal, RN</div><div class="t-stars">★★★★★</div></div>
                 </div>
+                <p class="t-text">"Gostei demais dessa camisa do Vascão e vocês que não compraram ainda — eu indico muito essa loja top ❤️🥇"</p>
+                <div class="t-source"><div class="t-source-dot"></div><span class="t-source-label">Google My Business</span></div>
             </div>
 
             <div class="testimonial">
-                <p class="t-text">Presente perfeito pro meu marido. Colecionador inveterado — disse que é uma das melhores que já teve. Voltarei a comprar!</p>
-                <div class="t-author">
-                    <div class="t-avatar" aria-label="Avatar Ana Paula">A</div>
-                    <div>
-                        <div class="t-name">Ana Paula — Fortaleza, CE</div>
-                        <div class="t-stars" aria-label="5 estrelas">★★★★★</div>
-                    </div>
+                <div class="t-header">
+                    <img src="imagens/depoimentos/depoimento-joao-paulo-camis7a.jpg" loading="lazy" alt="Foto de João Paulo de Araújo — cliente CAMIS7A" class="t-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="t-photo-fallback">J</div>
+                    <div class="t-meta"><div class="t-name">João Paulo de Araújo</div><div class="t-location">Natal, RN</div><div class="t-stars">★★★★★</div></div>
                 </div>
-            </div>
-
-            <div class="testimonial">
-                <p class="t-text">Atendimento impecável pelo WhatsApp. Tirei todas as dúvidas antes de comprar e não me arrependi nada!</p>
-                <div class="t-author">
-                    <div class="t-avatar" aria-label="Avatar Marcelo T.">M</div>
-                    <div>
-                        <div class="t-name">Marcelo T. — São Paulo, SP</div>
-                        <div class="t-stars" aria-label="5 estrelas">★★★★★</div>
-                    </div>
-                </div>
+                <p class="t-text">"Material top, super recomendo."</p>
+                <div class="t-source"><div class="t-source-dot"></div><span class="t-source-label">Google My Business</span></div>
             </div>
 
         </div>
@@ -616,16 +678,14 @@
     <div class="divider scroll-reveal"><span class="divider-icon">✦</span></div>
 
 
-    <!-- ✅ H2 semântico — "Quem sou" como seção de autoridade -->
+    <!-- ── QUEM SOU ── -->
     <h2 class="section-label scroll-reveal">👤 Quem está por trás</h2>
 
     <div class="about-card scroll-reveal">
         <div class="about-photo-wrap">
-            <!-- ✅ Alt text descritivo na foto de perfil -->
             <img src="imagens/foto-perfil.jpg"
-                 alt="Patrick Santiago — Fundador e Curador da CAMIS7A, especialista em camisas retrô"
-                 class="about-photo"
-                 loading="lazy"
+                 alt="Patrick Santiago — Fundador e Curador da CAMIS7A, especialista em camisas de futebol"
+                 class="about-photo" loading="lazy"
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <div class="about-photo-fallback">P</div>
             <div class="about-dot"></div>
@@ -634,7 +694,7 @@
             <div class="about-name">Patrick Santiago</div>
             <div class="about-role">Fundador &amp; Curador</div>
             <p class="about-text">
-                Apaixonado por futebol retrô e pela cultura das camisas históricas.
+                Apaixonado por futebol e pela cultura das camisas históricas.
                 Desde <strong>2021</strong>, transformando vivência, identidade e persistência
                 em um projeto que representa mais do que estilo:
                 <strong>representa quem vive o jogo dentro e fora de campo.</strong>
@@ -645,7 +705,7 @@
     <div class="divider scroll-reveal"><span class="divider-icon">✦</span></div>
 
 
-    <!-- ✅ H2 semântico — seção de confiança -->
+    <!-- ── POR QUE CONFIAR ── -->
     <h2 class="section-label scroll-reveal">🏆 Por que confiar na CAMIS7A?</h2>
 
     <div class="trust-grid scroll-reveal">
@@ -674,7 +734,7 @@
     <div class="divider scroll-reveal"><span class="divider-icon">✦</span></div>
 
 
-    <!-- ✅ H2 semântico — FAQ favorece featured snippets no Google -->
+    <!-- ── FAQ ── -->
     <h2 class="section-label scroll-reveal">❓ Perguntas Frequentes</h2>
 
     <div class="faq-list scroll-reveal">
@@ -729,6 +789,18 @@
             Curadoria de camisas para colecionadores apaixonados.<br>
             Enviamos para todo o Brasil com rastreio.
         </p>
+
+        <!-- ============================================================
+             🔧 LINKS INSTITUCIONAIS NO RODAPÉ
+             Apenas os 3 mais consultados antes/depois da compra.
+             Altere os href para as URLs reais do seu site.
+             ============================================================ -->
+        <nav class="footer-links" aria-label="Links institucionais">
+            <a href="https://www.camis7a.com.br/envio-e-prazos" target="_blank" rel="noopener noreferrer">Envio e Prazos</a>
+            <a href="https://www.camis7a.com.br/trocas-e-devolucoes" target="_blank" rel="noopener noreferrer">Trocas e Devoluções</a>
+            <a href="https://www.camis7a.com.br/rastrear-pedido" target="_blank" rel="noopener noreferrer">Rastrear Pedido</a>
+        </nav>
+
         <div class="footer-badge">
             <span class="footer-dot"></span>
             © 2026 — Todos os direitos reservados
