@@ -1,33 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-  ==============================================================
   sitemap.xml — CAMIS7A™
-  Lista todas as páginas públicas do site para que o Google
-  as encontre e indexe mais rapidamente.
-
-  Localização: raiz do repositório (camis7a.github.io/sitemap.xml)
-
-  Após subir no GitHub:
-  1. Acesse https://search.google.com/search-console
-  2. Vá em "Sitemaps" no menu lateral
-  3. Cole a URL: https://camis7a.github.io/sitemap.xml
-  4. Clique em "Enviar"
-
-  Validar em: https://www.xml-sitemaps.com/validate-xml-sitemap.html
-  ==============================================================
+  Lista páginas públicas e estratégicas do camis7a.github.io
 -->
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- ===========================================================
-       PÁGINA INICIAL (index)
-       - priority 1.0 = máxima prioridade (use só para o index)
-       - changefreq: com que frequência a página muda
-         Opções: always | hourly | daily | weekly | monthly | yearly | never
-       - lastmod: data da última alteração (formato AAAA-MM-DD)
-       🔧 Atualize "lastmod" sempre que fizer alterações na página.
-       =========================================================== -->
+  <!-- Página inicial -->
   <url>
     <loc>https://camis7a.github.io/</loc>
     <lastmod>2026-04-11</lastmod>
@@ -35,12 +15,7 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- ===========================================================
-       PÁGINA DE PRODUTO — Camisa Brasil 2026 Retrô 1970
-       - priority 0.9 = alta prioridade (páginas de produto)
-       - changefreq monthly: preço e estoque mudam ocasionalmente
-       🔧 Atualize "lastmod" sempre que editar a página do produto.
-       =========================================================== -->
+  <!-- Produto: Brasil 2026 Amarela Inspirada 1970 -->
   <url>
     <loc>https://camis7a.github.io/camisa-selecao-brasileira-2026-inspirada-1970.html</loc>
     <lastmod>2026-04-11</lastmod>
@@ -48,25 +23,12 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- ===========================================================
-       🔧 ADICIONE NOVOS PRODUTOS AQUI
-       Quando criar uma nova página de produto, copie o bloco
-       <url> acima, ajuste a <loc> e o <lastmod>.
-
-       Exemplo para a Camisa Azul (quando estiver pronta):
-
-      PÁGINA DE PRODUTO — Camisa Brasil 2026 Retrô 1970
-       - priority 0.9 = alta prioridade (páginas de produto)
-       - changefreq monthly: preço e estoque mudam ocasionalmente
-       🔧 Atualize "lastmod" sempre que editar a página do produto.
-         =========================================================== -->
+  <!-- Produto: Brasil 2026 Azul -->
   <url>
     <loc>https://camis7a.github.io/camisa-selecao-brasileira-2026-azul-torcedor-pro.html</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-
 
 </urlset>
